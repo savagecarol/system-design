@@ -1,0 +1,6 @@
+---
+hide:
+  - navigation
+---
+
+<meta http-equiv="refresh" content="0; url=/system-design/" />

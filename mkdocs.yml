@@ -1,0 +1,29 @@
+site_name: abc
+site_description: Visual system design notes
+site_author: Kartikeya Sharma
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+  features:
+    - navigation.top
+    - search.highlight
+    - search.suggest
+  custom_dir: overrides
+
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+extra_css:
+  - assets/extra.css
