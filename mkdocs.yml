@@ -1,6 +1,8 @@
 site_name: abc
 site_description: Visual system design notes
 site_author: Kartikeya Sharma
+site_url: https://savagecarol.github.io/syste-design/
+
 
 theme:
   name: material
