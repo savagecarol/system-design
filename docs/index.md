@@ -1,8 +1,3 @@
----
-hide:
-  - navigation
----
-
 # About This Site
 
 Hi 👋, my name is **Kartikeya Sharma**.
