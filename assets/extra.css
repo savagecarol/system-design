@@ -335,8 +335,7 @@ body, .md-main, .md-sidebar--primary, .md-header, .md-content {
 }
 
 /* ------------------ Main content scrollable ------------------ */
-.md-main {
-    margin-top: 50px;          /* space for topbar */
+.md-main {      /* space for topbar */
     margin-left: 260px;        /* space for left sidebar */
     overflow: auto;
     padding: 2rem 3rem;        /* increased padding */
@@ -378,4 +377,54 @@ body, .md-main, .md-sidebar--primary, .md-header, .md-content {
     margin-bottom: 1rem;
     font-size: 1rem;
     line-height: 1.6;
+}
+
+
+
+
+/* ------------------ Zoom Controls ------------------ */
+.md-zoom-controls {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    z-index: 1000;
+}
+
+.md-zoom-controls button {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, #7b68ee, #6c5ce7);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(123, 104, 238, 0.3);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.md-zoom-controls button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(123, 104, 238, 0.4);
+}
+
+.md-zoom-controls button:active {
+    transform: scale(0.95);
+}
+
+
+/* Stable zoom wrapper */
+.md-content-zoom {
+    transform-origin: top left;
+    transition: transform 0.15s ease-in-out;
+    width: fit-content;
+}
+
+/* Ensure layout doesn’t clip scaled content */
+.md-main {
+    overflow: auto;
 }
