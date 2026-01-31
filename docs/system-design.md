@@ -1,3 +1,3 @@
-#        System Design
+# System Design
 
 ![](system-design.svg)
