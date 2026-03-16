@@ -13,26 +13,26 @@
       
       
       
+        <link rel="prev" href="../../009.System%20Design%20Components/4.Kafka/">
       
-        <link rel="next" href="001.system%20design/1.introduction/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>System Design</title>
+        <title>SOLID Principles & Design Patterns – Video Guide - System Design</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="assets/extra.css">
+      <link rel="stylesheet" href="../../assets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#savagecarol" class="md-skip">
+        <a href="#solid-principles-design-patterns-video-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="System Design" class="md-header__button md-logo" aria-label="System Design" data-md-component="logo">
+    <a href="../.." title="System Design" class="md-header__button md-logo" aria-label="System Design" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              savagecarol
+              SOLID Principles &amp; Design Patterns – Video Guide
             
           </span>
         </div>
@@ -206,7 +206,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="System Design" class="md-nav__button md-logo" aria-label="System Design" data-md-component="logo">
+    <a href="../.." title="System Design" class="md-nav__button md-logo" aria-label="System Design" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -221,37 +221,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    savagecarol
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -267,70 +240,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#the-irony" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The irony
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#help-build-this" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Help build this
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contribute-on-github" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Contribute on GitHub
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Links
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -389,7 +298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="001.system%20design/1.introduction/" class="md-nav__link">
+      <a href="../../001.system%20design/1.introduction/" class="md-nav__link">
         
   
   
@@ -471,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="002.requirements/1.functional/" class="md-nav__link">
+      <a href="../../002.requirements/1.functional/" class="md-nav__link">
         
   
   
@@ -499,7 +408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="002.requirements/2.non-functional/" class="md-nav__link">
+      <a href="../../002.requirements/2.non-functional/" class="md-nav__link">
         
   
   
@@ -581,7 +490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="003.capacity%20estimation/1.definition%20and%20types/" class="md-nav__link">
+      <a href="../../003.capacity%20estimation/1.definition%20and%20types/" class="md-nav__link">
         
   
   
@@ -609,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="003.capacity%20estimation/2.thumb%20rules/" class="md-nav__link">
+      <a href="../../003.capacity%20estimation/2.thumb%20rules/" class="md-nav__link">
         
   
   
@@ -637,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="003.capacity%20estimation/3.calculations/" class="md-nav__link">
+      <a href="../../003.capacity%20estimation/3.calculations/" class="md-nav__link">
         
   
   
@@ -665,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="003.capacity%20estimation/4.infra/" class="md-nav__link">
+      <a href="../../003.capacity%20estimation/4.infra/" class="md-nav__link">
         
   
   
@@ -693,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="003.capacity%20estimation/5.calculation%2Binfra/" class="md-nav__link">
+      <a href="../../003.capacity%20estimation/5.calculation%2Binfra/" class="md-nav__link">
         
   
   
@@ -775,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="004.scaling/1.introduction/" class="md-nav__link">
+      <a href="../../004.scaling/1.introduction/" class="md-nav__link">
         
   
   
@@ -803,7 +712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="004.scaling/2.vertical%20scaling/" class="md-nav__link">
+      <a href="../../004.scaling/2.vertical%20scaling/" class="md-nav__link">
         
   
   
@@ -831,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="004.scaling/3.horizontal%20scaling/" class="md-nav__link">
+      <a href="../../004.scaling/3.horizontal%20scaling/" class="md-nav__link">
         
   
   
@@ -859,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="004.scaling/4.load%20balancer%20for%20hozintal%20scaling/" class="md-nav__link">
+      <a href="../../004.scaling/4.load%20balancer%20for%20hozintal%20scaling/" class="md-nav__link">
         
   
   
@@ -887,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="004.scaling/5.stateless%20and%20stateful%20service/" class="md-nav__link">
+      <a href="../../004.scaling/5.stateless%20and%20stateful%20service/" class="md-nav__link">
         
   
   
@@ -915,7 +824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="004.scaling/6.Auto%20scaling/" class="md-nav__link">
+      <a href="../../004.scaling/6.Auto%20scaling/" class="md-nav__link">
         
   
   
@@ -997,7 +906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="005.Architecture%20Patterns/1.system%20architecture/" class="md-nav__link">
+      <a href="../../005.Architecture%20Patterns/1.system%20architecture/" class="md-nav__link">
         
   
   
@@ -1025,7 +934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="005.Architecture%20Patterns/2.monolithic/" class="md-nav__link">
+      <a href="../../005.Architecture%20Patterns/2.monolithic/" class="md-nav__link">
         
   
   
@@ -1053,7 +962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="005.Architecture%20Patterns/3.microservices/" class="md-nav__link">
+      <a href="../../005.Architecture%20Patterns/3.microservices/" class="md-nav__link">
         
   
   
@@ -1081,7 +990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="005.Architecture%20Patterns/4.event%20driven/" class="md-nav__link">
+      <a href="../../005.Architecture%20Patterns/4.event%20driven/" class="md-nav__link">
         
   
   
@@ -1109,7 +1018,7 @@
   
   
     <li class="md-nav__item">
-      <a href="005.Architecture%20Patterns/5.when%20to%20use%20what/" class="md-nav__link">
+      <a href="../../005.Architecture%20Patterns/5.when%20to%20use%20what/" class="md-nav__link">
         
   
   
@@ -1191,7 +1100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="006.Time%20and%20Clocks/1.Definition/" class="md-nav__link">
+      <a href="../../006.Time%20and%20Clocks/1.Definition/" class="md-nav__link">
         
   
   
@@ -1219,7 +1128,7 @@
   
   
     <li class="md-nav__item">
-      <a href="006.Time%20and%20Clocks/2.Physical%20Clock/" class="md-nav__link">
+      <a href="../../006.Time%20and%20Clocks/2.Physical%20Clock/" class="md-nav__link">
         
   
   
@@ -1247,7 +1156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="006.Time%20and%20Clocks/3.Logical%20Clock/" class="md-nav__link">
+      <a href="../../006.Time%20and%20Clocks/3.Logical%20Clock/" class="md-nav__link">
         
   
   
@@ -1275,7 +1184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="006.Time%20and%20Clocks/4.Summary/" class="md-nav__link">
+      <a href="../../006.Time%20and%20Clocks/4.Summary/" class="md-nav__link">
         
   
   
@@ -1357,7 +1266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="007.Theorems/1.CAP%20theorem/" class="md-nav__link">
+      <a href="../../007.Theorems/1.CAP%20theorem/" class="md-nav__link">
         
   
   
@@ -1385,7 +1294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="007.Theorems/2.PACELC%20Theorem/" class="md-nav__link">
+      <a href="../../007.Theorems/2.PACELC%20Theorem/" class="md-nav__link">
         
   
   
@@ -1413,7 +1322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="007.Theorems/3.Consensus%20%26%20Fault%20Tolerance/" class="md-nav__link">
+      <a href="../../007.Theorems/3.Consensus%20%26%20Fault%20Tolerance/" class="md-nav__link">
         
   
   
@@ -1495,7 +1404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="008.Data%20Consistency/1.Consistency/" class="md-nav__link">
+      <a href="../../008.Data%20Consistency/1.Consistency/" class="md-nav__link">
         
   
   
@@ -1523,7 +1432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="008.Data%20Consistency/2.ACID%20Properties/" class="md-nav__link">
+      <a href="../../008.Data%20Consistency/2.ACID%20Properties/" class="md-nav__link">
         
   
   
@@ -1551,7 +1460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="008.Data%20Consistency/3.BASE%20Properties/" class="md-nav__link">
+      <a href="../../008.Data%20Consistency/3.BASE%20Properties/" class="md-nav__link">
         
   
   
@@ -1579,7 +1488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="008.Data%20Consistency/4.ACID%20vs%20BASE/" class="md-nav__link">
+      <a href="../../008.Data%20Consistency/4.ACID%20vs%20BASE/" class="md-nav__link">
         
   
   
@@ -1607,7 +1516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="008.Data%20Consistency/5.Distributed%20Transactions/" class="md-nav__link">
+      <a href="../../008.Data%20Consistency/5.Distributed%20Transactions/" class="md-nav__link">
         
   
   
@@ -1635,7 +1544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="008.Data%20Consistency/6.Two%20Phase%20Commit/" class="md-nav__link">
+      <a href="../../008.Data%20Consistency/6.Two%20Phase%20Commit/" class="md-nav__link">
         
   
   
@@ -1663,7 +1572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="008.Data%20Consistency/7.Three%20Phase%20Commit/" class="md-nav__link">
+      <a href="../../008.Data%20Consistency/7.Three%20Phase%20Commit/" class="md-nav__link">
         
   
   
@@ -1691,7 +1600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="008.Data%20Consistency/8.SAGA%20Pattern/" class="md-nav__link">
+      <a href="../../008.Data%20Consistency/8.SAGA%20Pattern/" class="md-nav__link">
         
   
   
@@ -1719,7 +1628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="008.Data%20Consistency/9.Try-Confirm-Cancel%20Pattern/" class="md-nav__link">
+      <a href="../../008.Data%20Consistency/9.Try-Confirm-Cancel%20Pattern/" class="md-nav__link">
         
   
   
@@ -1801,7 +1710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="009.System%20Design%20Components/1.Redis/" class="md-nav__link">
+      <a href="../../009.System%20Design%20Components/1.Redis/" class="md-nav__link">
         
   
   
@@ -1829,7 +1738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="009.System%20Design%20Components/2.gRPC/" class="md-nav__link">
+      <a href="../../009.System%20Design%20Components/2.gRPC/" class="md-nav__link">
         
   
   
@@ -1857,7 +1766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="009.System%20Design%20Components/3.Zookeeper/" class="md-nav__link">
+      <a href="../../009.System%20Design%20Components/3.Zookeeper/" class="md-nav__link">
         
   
   
@@ -1885,7 +1794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="009.System%20Design%20Components/4.Kafka/" class="md-nav__link">
+      <a href="../../009.System%20Design%20Components/4.Kafka/" class="md-nav__link">
         
   
   
@@ -1917,18 +1826,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
         
           
           <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
@@ -1949,7 +1860,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1964,10 +1875,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="010.Design%20Pattern/All/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SOLID Principles &amp; Design Patterns – Video Guide
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1983,6 +1921,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-is-solid-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. What is SOLID Principle
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-what-are-design-patterns-creational-structural-behavioral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. What are Design Patterns (Creational, Structural, Behavioral)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2022,10 +2002,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-irony" class="md-nav__link">
+  <a href="#1-what-is-solid-principle" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The irony
+        1. What is SOLID Principle
       
     </span>
   </a>
@@ -2033,32 +2013,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#help-build-this" class="md-nav__link">
+  <a href="#2-what-are-design-patterns-creational-structural-behavioral" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Help build this
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contribute-on-github" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Contribute on GitHub
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Links
+        2. What are Design Patterns (Creational, Structural, Behavioral)
       
     </span>
   </a>
@@ -2082,26 +2040,200 @@
 
 
 
-<h1 id="savagecarol">savagecarol<a class="headerlink" href="#savagecarol" title="Permanent link">&para;</a></h1>
-<p>Hi, I'm <strong>Kartikeya Sharma</strong>.
-I run a YouTube channel called <strong>savagecarol</strong> where I break down <strong>System Design</strong> concepts in a simple, practical, and interview-ready way.
-This website is the written companion to that channel — clean Markdown guides, no fluff.</p>
+<h1 id="solid-principles-design-patterns-video-guide">SOLID Principles &amp; Design Patterns – Video Guide<a class="headerlink" href="#solid-principles-design-patterns-video-guide" title="Permanent link">&para;</a></h1>
+<p>A curated list of <strong>SOLID principles and common design patterns</strong> with short explanations and video resources.</p>
 <hr />
-<h2 id="the-irony">The irony<a class="headerlink" href="#the-irony" title="Permanent link">&para;</a></h2>
-<p>I talk about large-scale distributed systems...
-but this entire site is a <strong>simple static site</strong> built with MkDocs and hosted on GitHub Pages.
-No microservices. No Kubernetes. Just Markdown.
-Sometimes simple is enough.</p>
+<h2 id="1-what-is-solid-principle">1. What is SOLID Principle<a class="headerlink" href="#1-what-is-solid-principle" title="Permanent link">&para;</a></h2>
+<p>SOLID is a set of five object-oriented design principles that help developers write maintainable, scalable, and loosely coupled software.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/iVg_IHTw6tU?si=XB-mib0QJTCBSl2n">https://youtu.be/iVg_IHTw6tU?si=XB-mib0QJTCBSl2n</a></p>
+</blockquote>
 <hr />
-<h2 id="help-build-this">Help build this<a class="headerlink" href="#help-build-this" title="Permanent link">&para;</a></h2>
-<p>I need help writing <strong>Markdown guides</strong> on the system design topics I teach.
-If you contribute even one topic, you help thousands of developers learn.
-I will <strong>review and merge</strong> every contribution.</p>
-<h2 id="contribute-on-github"><a href="https://github.com/savagecarol/system-design">Contribute on GitHub</a><a class="headerlink" href="#contribute-on-github" title="Permanent link">&para;</a></h2>
-<h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
-<p>▶️ <a href="https://www.youtube.com/@savagecarol">YouTube</a> — watch the videos</p>
-<p>🐙 <a href="https://github.com/savagecarol/system-design">GitHub</a> — contribute Markdown guides</p>
-<p>💼 <a href="https://www.linkedin.com/in/savagecarol">LinkedIn</a> — connect with me</p>
+<h2 id="2-what-are-design-patterns-creational-structural-behavioral">2. What are Design Patterns (Creational, Structural, Behavioral)<a class="headerlink" href="#2-what-are-design-patterns-creational-structural-behavioral" title="Permanent link">&para;</a></h2>
+<p>Design patterns are reusable solutions to common software design problems categorized into Creational, Structural, and Behavioral patterns.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/Cy59bJ3Gk9o?si=8YrnLh1qBWOx9s2l">https://youtu.be/Cy59bJ3Gk9o?si=8YrnLh1qBWOx9s2l</a></p>
+</blockquote>
+<hr />
+<h1 id="creational-design-patterns">Creational Design Patterns<a class="headerlink" href="#creational-design-patterns" title="Permanent link">&para;</a></h1>
+<h2 id="3-singleton-pattern">3. Singleton Pattern<a class="headerlink" href="#3-singleton-pattern" title="Permanent link">&para;</a></h2>
+<p>Ensures that a class has only one instance and provides a global access point to it.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/cDM-DeBX1pw?si=QsNM7rxJcyYpg_aR">https://youtu.be/cDM-DeBX1pw?si=QsNM7rxJcyYpg_aR</a></p>
+</blockquote>
+<hr />
+<h2 id="4-factory-method-pattern">4. Factory Method Pattern<a class="headerlink" href="#4-factory-method-pattern" title="Permanent link">&para;</a></h2>
+<p>Defines an interface for creating objects while letting subclasses decide which class to instantiate.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/zsDepMauAes?si=Gy7sG_BLG4kcqVeb">https://youtu.be/zsDepMauAes?si=Gy7sG_BLG4kcqVeb</a></p>
+</blockquote>
+<hr />
+<h2 id="5-abstract-factory-pattern">5. Abstract Factory Pattern<a class="headerlink" href="#5-abstract-factory-pattern" title="Permanent link">&para;</a></h2>
+<p>Provides an interface for creating families of related or dependent objects without specifying their concrete classes.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/t_QjDIzzCxE?si=q2zKPEBNioEsAOzX">https://youtu.be/t_QjDIzzCxE?si=q2zKPEBNioEsAOzX</a></p>
+</blockquote>
+<hr />
+<h2 id="6-builder-pattern">6. Builder Pattern<a class="headerlink" href="#6-builder-pattern" title="Permanent link">&para;</a></h2>
+<p>Separates the construction of a complex object from its representation so the same construction process can create different objects.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/QIbQbwFODAw?si=cTwJRR02v9r53GLh">https://youtu.be/QIbQbwFODAw?si=cTwJRR02v9r53GLh</a></p>
+</blockquote>
+<hr />
+<h2 id="7-prototype-pattern">7. Prototype Pattern<a class="headerlink" href="#7-prototype-pattern" title="Permanent link">&para;</a></h2>
+<p>Creates new objects by copying an existing instance instead of creating a new one from scratch.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/sc1lUC3AgdI?si=jKWA-deElFh9KZ5h">https://youtu.be/sc1lUC3AgdI?si=jKWA-deElFh9KZ5h</a></p>
+</blockquote>
+<hr />
+<h1 id="structural-design-patterns">Structural Design Patterns<a class="headerlink" href="#structural-design-patterns" title="Permanent link">&para;</a></h1>
+<h2 id="8-adapter-pattern">8. Adapter Pattern<a class="headerlink" href="#8-adapter-pattern" title="Permanent link">&para;</a></h2>
+<p>Allows incompatible interfaces to work together by converting one interface into another.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/DqCqYMw3AVY?si=VtIXen71j1y-ALhs">https://youtu.be/DqCqYMw3AVY?si=VtIXen71j1y-ALhs</a></p>
+</blockquote>
+<hr />
+<h2 id="9-decorator-pattern">9. Decorator Pattern<a class="headerlink" href="#9-decorator-pattern" title="Permanent link">&para;</a></h2>
+<p>Adds new functionality to objects dynamically without modifying their structure.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/WxcYvrch1gE?si=jLX-mSyinBAQQir5">https://youtu.be/WxcYvrch1gE?si=jLX-mSyinBAQQir5</a></p>
+</blockquote>
+<hr />
+<h2 id="10-facade-pattern">10. Facade Pattern<a class="headerlink" href="#10-facade-pattern" title="Permanent link">&para;</a></h2>
+<p>Provides a simplified interface to a complex subsystem.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/vxRVEb2-0kA?si=5GTh7DUhHRVctOwi">https://youtu.be/vxRVEb2-0kA?si=5GTh7DUhHRVctOwi</a></p>
+</blockquote>
+<hr />
+<h2 id="11-composite-pattern">11. Composite Pattern<a class="headerlink" href="#11-composite-pattern" title="Permanent link">&para;</a></h2>
+<p>Composes objects into tree structures to represent part-whole hierarchies.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/qnexSXUelFs?si=FFVWKpRva3JNNAIA">https://youtu.be/qnexSXUelFs?si=FFVWKpRva3JNNAIA</a></p>
+</blockquote>
+<hr />
+<h2 id="12-proxy-pattern">12. Proxy Pattern<a class="headerlink" href="#12-proxy-pattern" title="Permanent link">&para;</a></h2>
+<p>Provides a placeholder object that controls access to another object.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/d8D4sqTzDaw?si=_YM2Lx49qDKJLczh">https://youtu.be/d8D4sqTzDaw?si=_YM2Lx49qDKJLczh</a></p>
+</blockquote>
+<hr />
+<h2 id="13-bridge-pattern">13. Bridge Pattern<a class="headerlink" href="#13-bridge-pattern" title="Permanent link">&para;</a></h2>
+<p>Decouples an abstraction from its implementation so that both can evolve independently.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/2cuEHwSGJ9o?si=YE2S6TSNMlvhPis2">https://youtu.be/2cuEHwSGJ9o?si=YE2S6TSNMlvhPis2</a></p>
+</blockquote>
+<hr />
+<h2 id="14-flyweight-pattern">14. Flyweight Pattern<a class="headerlink" href="#14-flyweight-pattern" title="Permanent link">&para;</a></h2>
+<p>Reduces memory usage by sharing common parts of objects instead of creating many similar instances.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/_CSwCck6cCw?si=d-ViGGG_eo5UO-rm">https://youtu.be/_CSwCck6cCw?si=d-ViGGG_eo5UO-rm</a></p>
+</blockquote>
+<hr />
+<h1 id="behavioral-design-patterns">Behavioral Design Patterns<a class="headerlink" href="#behavioral-design-patterns" title="Permanent link">&para;</a></h1>
+<h2 id="15-chain-of-responsibility-pattern">15. Chain of Responsibility Pattern<a class="headerlink" href="#15-chain-of-responsibility-pattern" title="Permanent link">&para;</a></h2>
+<p>Passes a request along a chain of handlers until one of them processes it.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/TlCtoRS08vM?si=GuKRuGXTqaKpWvO-">https://youtu.be/TlCtoRS08vM?si=GuKRuGXTqaKpWvO-</a></p>
+</blockquote>
+<hr />
+<h2 id="16-observer-pattern">16. Observer Pattern<a class="headerlink" href="#16-observer-pattern" title="Permanent link">&para;</a></h2>
+<p>Defines a one-to-many dependency where multiple observers are notified automatically when a subject changes state.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://www.youtube.com/watch?v=_BpmfnqjgzQ">https://www.youtube.com/watch?v=_BpmfnqjgzQ</a></p>
+</blockquote>
+<hr />
+<h2 id="17-strategy-pattern">17. Strategy Pattern<a class="headerlink" href="#17-strategy-pattern" title="Permanent link">&para;</a></h2>
+<p>Defines a family of algorithms and makes them interchangeable at runtime.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/d_3IM8Z739c?si=Sr1n0w4ktD-6EUTd">https://youtu.be/d_3IM8Z739c?si=Sr1n0w4ktD-6EUTd</a></p>
+</blockquote>
+<hr />
+<h2 id="18-command-pattern">18. Command Pattern<a class="headerlink" href="#18-command-pattern" title="Permanent link">&para;</a></h2>
+<p>Encapsulates a request as an object, allowing parameterization and queuing of requests.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/Tw8nW8k5-zc?si=lkxFiLIXk0MWSjrQ">https://youtu.be/Tw8nW8k5-zc?si=lkxFiLIXk0MWSjrQ</a></p>
+</blockquote>
+<hr />
+<h2 id="19-state-pattern">19. State Pattern<a class="headerlink" href="#19-state-pattern" title="Permanent link">&para;</a></h2>
+<p>Allows an object to change its behavior when its internal state changes.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/jw13tzKHeoA?si=LzpcpFjjze_Lk_1t">https://youtu.be/jw13tzKHeoA?si=LzpcpFjjze_Lk_1t</a></p>
+</blockquote>
+<hr />
+<h2 id="20-template-method-pattern">20. Template Method Pattern<a class="headerlink" href="#20-template-method-pattern" title="Permanent link">&para;</a></h2>
+<p>Defines the skeleton of an algorithm while allowing subclasses to override certain steps.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/jw13tzKHeoA?si=9dLwZKlF0hKGbuIh">https://youtu.be/jw13tzKHeoA?si=9dLwZKlF0hKGbuIh</a></p>
+</blockquote>
+<hr />
+<h2 id="21-mediator-pattern">21. Mediator Pattern<a class="headerlink" href="#21-mediator-pattern" title="Permanent link">&para;</a></h2>
+<p>Reduces direct dependencies between objects by making them communicate through a mediator.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/TlCtoRS08vM?si=RYJeKp5Ih_DxjBdg">https://youtu.be/TlCtoRS08vM?si=RYJeKp5Ih_DxjBdg</a></p>
+</blockquote>
+<hr />
+<h2 id="22-iterator-pattern">22. Iterator Pattern<a class="headerlink" href="#22-iterator-pattern" title="Permanent link">&para;</a></h2>
+<p>Provides a way to sequentially access elements of a collection without exposing its underlying representation.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/wWDDNGSMu68?si=wXxblL1e_ui0ywWK">https://youtu.be/wWDDNGSMu68?si=wXxblL1e_ui0ywWK</a></p>
+</blockquote>
+<hr />
+<h2 id="23-memento-pattern">23. Memento Pattern<a class="headerlink" href="#23-memento-pattern" title="Permanent link">&para;</a></h2>
+<p>Captures and restores an object's internal state without exposing its implementation details.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/SLP6-69Fb-0?si=Nnez87nealxdfLWL">https://youtu.be/SLP6-69Fb-0?si=Nnez87nealxdfLWL</a></p>
+</blockquote>
+<hr />
+<h2 id="24-interpreter-pattern">24. Interpreter Pattern<a class="headerlink" href="#24-interpreter-pattern" title="Permanent link">&para;</a></h2>
+<p>Defines a grammar for a language and provides an interpreter to evaluate sentences in that language.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://www.youtube.com/watch?v=0L9t4j-0hQ0">https://www.youtube.com/watch?v=0L9t4j-0hQ0</a></p>
+</blockquote>
+<hr />
+<h2 id="25-visitor-pattern">25. Visitor Pattern<a class="headerlink" href="#25-visitor-pattern" title="Permanent link">&para;</a></h2>
+<p>Separates algorithms from the objects on which they operate so new operations can be added easily.</p>
+<blockquote>
+<p><strong>Video</strong>: <a href="https://youtu.be/YUkWCGoNPFY?si=RD04643ArBXhPj6g">https://youtu.be/YUkWCGoNPFY?si=RD04643ArBXhPj6g</a></p>
+</blockquote>
+<hr />
+<h2 id="document">Document<a class="headerlink" href="#document" title="Permanent link">&para;</a></h2>
+<hr />
+<div id="pdf-container" style="width: 100%;"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+  pdfjsLib.GlobalWorkerOptions.workerSrc =
+    'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+  const url = '../../assets/pdf/DesignPattern.pdf';
+  const container = document.getElementById('pdf-container');
+
+  pdfjsLib.getDocument(url).promise.then(pdf => {
+    for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+      pdf.getPage(pageNum).then(page => {
+        const viewport = page.getViewport({ scale: 1.8 });
+
+        const wrapper = document.createElement('div');
+        wrapper.style.marginBottom = '1.5rem';
+
+        const canvas = document.createElement('canvas');
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+        canvas.style.width = '100%';
+        canvas.style.height = 'auto';
+        canvas.style.display = 'block';
+
+        wrapper.appendChild(canvas);
+        container.appendChild(wrapper);
+
+        page.render({
+          canvasContext: canvas.getContext('2d'),
+          viewport
+        });
+      });
+    }
+  });
+</script>
 
 
 
@@ -2157,12 +2289,12 @@ I will <strong>review and merge</strong> every contribution.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.top", "search.highlight", "search.suggest"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="assets/zoom.js"></script>
+        <script src="../../assets/zoom.js"></script>
       
     
   </body>
