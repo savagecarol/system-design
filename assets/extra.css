@@ -470,3 +470,67 @@ body, .md-main, .md-sidebar--primary, .md-header, .md-content {
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
 }
+
+/* ------------------ Mobile / Responsive Fix ------------------ */
+@media screen and (max-width: 76.1875em) {
+    .md-main {
+        margin-left: 0 !important;
+        padding: 1.5rem 1.25rem !important;
+    }
+
+    .md-custom-footer {
+        margin-left: 0 !important;
+        padding: 1rem 1.25rem !important;
+    }
+
+    .sidebar-resize-handle {
+        display: none !important;
+    }
+
+    .md-sidebar--primary {
+        top: 0 !important;
+        height: 100vh !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .md-main {
+        margin-left: 0 !important;
+        padding: 1rem 0.75rem !important;
+    }
+
+    .md-custom-footer {
+        margin-left: 0 !important;
+        padding: 0.75rem !important;
+    }
+
+    .md-header {
+        padding: 0 1rem !important;
+    }
+
+    .md-header__social {
+        gap: 0.4rem;
+        margin-left: 0.5rem !important;
+    }
+
+    .md-zoom-controls {
+        bottom: 1rem;
+        right: 0.75rem;
+    }
+
+    .md-zoom-controls button {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+
+    .md-content p {
+        font-size: 1rem;
+    }
+
+    .md-content li,
+    .md-content ul,
+    .md-content ol {
+        font-size: 1rem;
+    }
+}
