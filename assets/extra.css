@@ -461,3 +461,12 @@ body, .md-main, .md-sidebar--primary, .md-header, .md-content {
     transition: transform 0.15s ease-in-out;
     width: fit-content;
 }
+
+.md-sidebar--secondary {
+    display: none !important;
+}
+
+.md-content__inner {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
