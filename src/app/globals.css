@@ -3,21 +3,82 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #0f172a;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-geist-mono), monospace;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.22);
+}
+
+/* Excalidraw viewer (read-only) — light surface */
+.excalidraw-viewer .excalidraw {
+  --color-surface-primary: #f8fafc !important;
+}
+
+/* Excalidraw notes canvas — white surface, light theme */
+.excalidraw-notes .excalidraw {
+  --color-surface-primary: #ffffff !important;
+}
+
+/* Viewer: hide hamburger, help, and footer actions (read-only — no editing UI needed) */
+.excalidraw-viewer .excalidraw .App-menu__left,
+.excalidraw-viewer .excalidraw .main-menu-trigger,
+.excalidraw-viewer .excalidraw [data-testid="main-menu-trigger"],
+.excalidraw-viewer .excalidraw button[aria-label="Main menu"],
+.excalidraw-viewer .excalidraw .help-icon,
+.excalidraw-viewer .excalidraw button[aria-label="Help"],
+.excalidraw-viewer .excalidraw [data-testid="help-button"],
+.excalidraw-viewer .excalidraw footer .layer-ui__wrapper__footer-right {
+  display: none !important;
+}
+
+/* Notes canvas: only hide hamburger and help — keep all color/stroke panels visible */
+.excalidraw-notes .excalidraw .main-menu-trigger,
+.excalidraw-notes .excalidraw [data-testid="main-menu-trigger"],
+.excalidraw-notes .excalidraw button[aria-label="Main menu"],
+.excalidraw-notes .excalidraw .help-icon,
+.excalidraw-notes .excalidraw button[aria-label="Help"],
+.excalidraw-notes .excalidraw [data-testid="help-button"] {
+  display: none !important;
 }
 
 @layer utilities {

@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# public generated
+/public/sitemap*.xml
+/public/robots.txt
+
+# agent outputs
+/agent-*-output/
