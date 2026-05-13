@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 import { motion, AnimatePresence } from 'framer-motion'
 import { scaleIn, fadeIn } from '@/lib/animations'
+import { useTheme } from 'next-themes'
 
 const Excalidraw = dynamic(
   () => import('@excalidraw/excalidraw').then(mod => mod.Excalidraw),
@@ -25,6 +26,9 @@ export function ExcalidrawViewer({ diagramPath, title }: ExcalidrawViewerProps) 
   const [data, setData] = useState<ExcalidrawData | null>(null)
   const [error, setError] = useState(false)
   const [loaded, setLoaded] = useState(false)
+  const { resolvedTheme } = useTheme()
+
+  const isDark = resolvedTheme === 'dark'
 
   useEffect(() => {
     setData(null)
@@ -48,10 +52,10 @@ export function ExcalidrawViewer({ diagramPath, title }: ExcalidrawViewerProps) 
 
   if (error) {
     return (
-      <div className="absolute inset-0 flex items-center justify-center bg-surface/30">
+      <div className="absolute inset-0 flex items-center justify-center bg-surface/30 dark:bg-neutral-900/30">
         <div className="text-center">
-          <p className="text-gray-900 font-medium mb-1">Diagram not available</p>
-          <p className="text-muted text-sm">The diagram file could not be loaded.</p>
+          <p className="text-gray-900 dark:text-neutral-100 font-medium mb-1">Diagram not available</p>
+          <p className="text-muted dark:text-neutral-500 text-sm">The diagram file could not be loaded.</p>
         </div>
       </div>
     )
@@ -66,11 +70,11 @@ export function ExcalidrawViewer({ diagramPath, title }: ExcalidrawViewerProps) 
             variants={fadeIn}
             initial="visible"
             exit="hidden"
-            className="absolute inset-0 bg-slate-50 flex items-center justify-center z-10"
+            className="absolute inset-0 bg-slate-50 dark:bg-neutral-950 flex items-center justify-center z-10"
           >
             <div className="flex flex-col items-center gap-3">
               <div className="w-8 h-8 border-2 border-brand-500 border-t-transparent rounded-full animate-spin" />
-              <span className="text-slate-400 text-sm font-mono">Loading {title}…</span>
+              <span className="text-slate-400 dark:text-neutral-500 text-sm font-mono">Loading {title}…</span>
             </div>
           </motion.div>
         )}
@@ -90,8 +94,8 @@ export function ExcalidrawViewer({ diagramPath, title }: ExcalidrawViewerProps) 
                 elements: data.elements as never[],
                 appState: {
                   ...data.appState,
-                  viewBackgroundColor: '#f8fafc',
-                  theme: 'light',
+                  viewBackgroundColor: isDark ? '#111111' : '#f8fafc',
+                  theme: isDark ? 'dark' : 'light',
                   viewModeEnabled: true,
                 },
                 files: data.files as never,
