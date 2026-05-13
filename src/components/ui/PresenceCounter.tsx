@@ -23,7 +23,7 @@ export function PresenceCounter({ page }: PresenceCounterProps) {
   }, [page])
 
   return (
-    <div className="flex items-center gap-1.5 text-sm text-muted">
+    <div className="flex items-center gap-1.5 text-sm text-muted dark:text-neutral-500">
       <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
       <AnimatePresence mode="wait">
         <motion.span
@@ -31,7 +31,7 @@ export function PresenceCounter({ page }: PresenceCounterProps) {
           variants={popIn}
           initial="hidden"
           animate="visible"
-          className="font-medium text-gray-900"
+          className="font-medium text-gray-900 dark:text-neutral-100"
         >
           {count}
         </motion.span>
