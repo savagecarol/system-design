@@ -6,6 +6,10 @@
   color-scheme: light;
 }
 
+.dark {
+  color-scheme: dark;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -49,12 +53,24 @@ h6 {
   background: rgba(0, 0, 0, 0.22);
 }
 
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
 /* Excalidraw viewer (read-only) — light surface */
 .excalidraw-viewer .excalidraw {
   --color-surface-primary: #f8fafc !important;
 }
 
-/* Excalidraw notes canvas — white surface, light theme */
+/* Excalidraw viewer — dark surface */
+.dark .excalidraw-viewer .excalidraw {
+  --color-surface-primary: #111111 !important;
+}
+
+/* Excalidraw notes canvas — always white surface, always light theme */
 .excalidraw-notes .excalidraw {
   --color-surface-primary: #ffffff !important;
 }
