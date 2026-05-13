@@ -7,12 +7,12 @@ export function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
-  useEffect(() => setMounted(true), [])
+  useEffect(() => { setMounted(true) }, [])
 
   // Render a same-size placeholder until mounted to prevent layout shift.
   // resolvedTheme is undefined during SSR — mounting guard ensures we only
   // render the real toggle on the client where localStorage is available.
-  if (!mounted) return <div className="w-12 h-6" />
+  if (!mounted) return <div className="w-12 h-6" aria-hidden="true" />
 
   const isDark = resolvedTheme === 'dark'
 
