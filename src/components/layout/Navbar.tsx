@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { slideDown } from '@/lib/animations'
 import { AuthButton } from '@/components/ui/AuthButton'
 import { PresenceCounter } from '@/components/ui/PresenceCounter'
+import { ThemeToggle } from '@/components/ui/ThemeToggle'
 
 interface NavbarProps {
   currentPage?: string
@@ -21,7 +22,7 @@ export function Navbar({ currentPage = '/', showMenuButton = false }: NavbarProp
       variants={slideDown}
       initial="hidden"
       animate="visible"
-      className="fixed top-0 left-0 right-0 z-30 h-14 border-b border-gray-200 bg-white/90 backdrop-blur-md"
+      className="fixed top-0 left-0 right-0 z-30 h-14 border-b border-gray-200 dark:border-neutral-800 bg-white/90 dark:bg-neutral-950/90 backdrop-blur-md"
     >
       <div className="max-w-7xl mx-auto h-full px-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
@@ -30,7 +31,7 @@ export function Navbar({ currentPage = '/', showMenuButton = false }: NavbarProp
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={handleMenuClick}
-              className="lg:hidden p-2 rounded-lg hover:bg-gray-100 text-muted hover:text-gray-900 transition-colors"
+              className="lg:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-800 text-muted dark:text-neutral-400 hover:text-gray-900 dark:hover:text-neutral-100 transition-colors"
               aria-label="Toggle sidebar"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -41,7 +42,7 @@ export function Navbar({ currentPage = '/', showMenuButton = false }: NavbarProp
 
           <Link
             href="/"
-            className="flex items-center gap-2 font-bold text-gray-900 hover:text-brand-600 transition-colors font-mono"
+            className="flex items-center gap-2 font-bold text-gray-900 dark:text-neutral-100 hover:text-brand-600 dark:hover:text-brand-500 transition-colors font-mono"
           >
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="text-brand-500">
               <rect x="1" y="1" width="7" height="7" rx="1.5" fill="currentColor" />
@@ -55,6 +56,7 @@ export function Navbar({ currentPage = '/', showMenuButton = false }: NavbarProp
 
         <div className="flex items-center gap-4">
           <PresenceCounter page={currentPage} />
+          <ThemeToggle />
           <AuthButton />
         </div>
       </div>
