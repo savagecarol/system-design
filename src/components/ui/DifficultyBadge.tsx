@@ -8,9 +8,9 @@ interface DifficultyBadgeProps {
 }
 
 const colorMap: Record<string, string> = {
-  Beginner: 'bg-emerald-50 text-emerald-700 border-emerald-300',
-  Intermediate: 'bg-amber-50 text-amber-700 border-amber-300',
-  Advanced: 'bg-red-50 text-red-700 border-red-300',
+  Beginner: 'bg-emerald-50 text-emerald-700 border-emerald-300 dark:bg-emerald-950 dark:text-emerald-400 dark:border-emerald-800',
+  Intermediate: 'bg-amber-50 text-amber-700 border-amber-300 dark:bg-amber-950 dark:text-amber-400 dark:border-amber-800',
+  Advanced: 'bg-red-50 text-red-700 border-red-300 dark:bg-red-950 dark:text-red-400 dark:border-red-800',
 }
 
 export function DifficultyBadge({ difficulty }: DifficultyBadgeProps) {

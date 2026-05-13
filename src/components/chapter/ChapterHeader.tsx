@@ -20,19 +20,19 @@ export function ChapterHeader({ chapter, visitCount }: ChapterHeaderProps) {
       className="mb-8"
     >
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-1.5 text-sm text-muted mb-4">
-        <Link href="/" className="hover:text-gray-900 transition-colors">Home</Link>
+      <nav className="flex items-center gap-1.5 text-sm text-muted dark:text-neutral-500 mb-4">
+        <Link href="/" className="hover:text-gray-900 dark:hover:text-neutral-100 transition-colors">Home</Link>
         <span>/</span>
-        <span className="text-gray-600">{chapter.category}</span>
+        <span className="text-gray-600 dark:text-neutral-400">{chapter.category}</span>
         <span>/</span>
-        <span className="text-gray-900">{chapter.title}</span>
+        <span className="text-gray-900 dark:text-neutral-100">{chapter.title}</span>
       </nav>
 
       {/* Title */}
-      <h1 className="text-3xl font-bold text-gray-900 mb-4">{chapter.title}</h1>
+      <h1 className="text-3xl font-bold text-gray-900 dark:text-neutral-100 mb-4">{chapter.title}</h1>
 
       {/* Meta row */}
-      <div className="flex flex-wrap items-center gap-3 text-sm text-muted">
+      <div className="flex flex-wrap items-center gap-3 text-sm text-muted dark:text-neutral-500">
         <DifficultyBadge difficulty={chapter.difficulty} />
         <span className="flex items-center gap-1">
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -52,7 +52,7 @@ export function ChapterHeader({ chapter, visitCount }: ChapterHeaderProps) {
       </div>
 
       {chapter.description && (
-        <p className="mt-4 text-muted leading-relaxed">{chapter.description}</p>
+        <p className="mt-4 text-muted dark:text-neutral-500 leading-relaxed">{chapter.description}</p>
       )}
     </motion.header>
   )
