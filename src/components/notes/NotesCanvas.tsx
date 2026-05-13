@@ -309,7 +309,7 @@ export function NotesCanvas({ chapter, isFullyOpen }: NotesCanvasProps) {
       </div>
 
       {/* Toolbar */}
-      <div className="flex items-center justify-between px-3 py-2 border-t border-gray-200 bg-gray-50 shrink-0">
+      <div className="flex items-center justify-between px-3 py-2 border-t border-gray-200 dark:border-neutral-800 bg-gray-50 dark:bg-neutral-900 shrink-0">
         <div className="flex items-center gap-2">
           <button
             onClick={handleSave}
@@ -319,13 +319,13 @@ export function NotesCanvas({ chapter, isFullyOpen }: NotesCanvasProps) {
           </button>
           <button
             onClick={handleClear}
-            className="px-3 py-1.5 text-xs font-medium bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-lg transition-colors"
+            className="px-3 py-1.5 text-xs font-medium bg-gray-200 dark:bg-neutral-800 hover:bg-gray-300 dark:hover:bg-neutral-700 text-gray-700 dark:text-neutral-300 rounded-lg transition-colors"
           >
             Clear
           </button>
         </div>
         {lastSaved && (
-          <span className="text-xs text-gray-400">
+          <span className="text-xs text-gray-400 dark:text-neutral-500">
             Saved {lastSaved.toLocaleTimeString()}
           </span>
         )}
