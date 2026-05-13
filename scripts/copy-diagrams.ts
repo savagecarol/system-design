@@ -40,7 +40,10 @@ async function main() {
     return
   }
 
-  // Ensure public/diagrams exists
+  // Wipe public/diagrams first so removed/renamed files don't persist
+  if (fs.existsSync(PUBLIC_DIAGRAMS_DIR)) {
+    fs.rmSync(PUBLIC_DIAGRAMS_DIR, { recursive: true, force: true })
+  }
   fs.mkdirSync(PUBLIC_DIAGRAMS_DIR, { recursive: true })
 
   const folders = fs.readdirSync(FILES_DIR, { withFileTypes: true })
