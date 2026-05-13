@@ -68,12 +68,60 @@ function parseFile(fileName: string): { order: number; title: string; slug: stri
   }
 }
 
+function getAllChaptersFromPublicDiagrams(): Chapter[] {
+  const publicDiagramsDir = path.join(process.cwd(), 'public', 'diagrams')
+  if (!fs.existsSync(publicDiagramsDir)) return []
+
+  // Derive category and chapter ordering from chapters.config.ts key order
+  const configKeys = Object.keys(chapterMeta)
+  const categoryOrder = new Map<string, number>()
+  const chapterOrderMap = new Map<string, number>()
+  let catIdx = 0
+  for (const key of configKeys) {
+    const catSlug = key.split('/')[0]
+    if (!categoryOrder.has(catSlug)) categoryOrder.set(catSlug, catIdx++)
+    chapterOrderMap.set(key, chapterOrderMap.size)
+  }
+
+  const chapters: Chapter[] = []
+  const folders = fs.readdirSync(publicDiagramsDir, { withFileTypes: true }).filter(d => d.isDirectory())
+
+  for (const folder of folders) {
+    const categorySlug = folder.name
+    const category = toTitle(categorySlug.replace(/-/g, ' '))
+    const catOrder = categoryOrder.get(categorySlug) ?? 99
+    const folderPath = path.join(publicDiagramsDir, folder.name)
+    const files = fs.readdirSync(folderPath, { withFileTypes: true })
+      .filter(f => f.isFile() && f.name.endsWith('.excalidraw'))
+
+    for (const file of files) {
+      const chapterSlug = file.name.replace('.excalidraw', '')
+      const fullSlug = `${categorySlug}/${chapterSlug}`
+      const meta = chapterMeta[fullSlug] ?? defaultMeta
+      chapters.push({
+        categoryOrder: catOrder,
+        category,
+        categorySlug,
+        chapterOrder: chapterOrderMap.get(fullSlug) ?? 99,
+        title: toTitle(chapterSlug.replace(/-/g, ' ')),
+        slug: chapterSlug,
+        fullSlug,
+        diagramPath: `/diagrams/${categorySlug}/${chapterSlug}.excalidraw`,
+        difficulty: meta.difficulty,
+        readTime: meta.readTime,
+        description: meta.description,
+      })
+    }
+  }
+
+  return chapters
+}
+
 export function getAllChapters(): Chapter[] {
   const filesDir = path.join(process.cwd(), '..', 'files')
 
   if (!fs.existsSync(filesDir)) {
-    console.warn('Files directory not found:', filesDir)
-    return []
+    return getAllChaptersFromPublicDiagrams()
   }
 
   const chapters: Chapter[] = []
