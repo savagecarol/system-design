@@ -17,5 +17,8 @@ const app = getApps().length > 0 ? getApp() : initializeApp(firebaseConfig)
 
 export const auth = getAuth(app)
 export const db = getFirestore(app)
-export const rtdb = getDatabase(app)
+// Realtime Database is client-only — guard against SSR
+export const rtdb = typeof window !== 'undefined'
+  ? getDatabase(app)
+  : null as unknown as ReturnType<typeof getDatabase>
 export default app
