@@ -90,12 +90,13 @@ export function ExcalidrawViewer({ diagramPath, title }: ExcalidrawViewerProps) 
             className="absolute inset-0 overflow-hidden excalidraw-viewer"
           >
             <Excalidraw
+              key={isDark ? 'dark' : 'light'}
+              theme={isDark ? 'dark' : 'light'}
               initialData={{
                 elements: data.elements as never[],
                 appState: {
                   ...data.appState,
                   viewBackgroundColor: isDark ? '#111111' : '#f8fafc',
-                  theme: isDark ? 'dark' : 'light',
                   viewModeEnabled: true,
                 },
                 files: data.files as never,

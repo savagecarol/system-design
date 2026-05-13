@@ -13,6 +13,9 @@ interface NotesDrawerProps {
 }
 
 export function NotesDrawer({ isOpen, onClose, chapter }: NotesDrawerProps) {
+  // Tracks whether the slide-in spring animation has finished. We defer
+  // Excalidraw scene injection until then so Excalidraw doesn't measure its
+  // container mid-animation (which corrupts pointer hit-testing).
   const [isFullyOpen, setIsFullyOpen] = useState(false)
 
   return (

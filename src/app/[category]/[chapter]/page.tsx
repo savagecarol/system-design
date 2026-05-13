@@ -74,7 +74,7 @@ export default function ChapterPage({ params }: PageProps) {
   }
 
   return (
-    <div className="h-screen flex flex-col bg-canvas overflow-hidden">
+    <div className="h-screen flex flex-col bg-canvas dark:bg-neutral-950 overflow-hidden">
       <JsonLd data={jsonLd} />
       <Navbar currentPage={`/${chapter.categorySlug}/${chapter.slug}`} showMenuButton />
 
@@ -87,14 +87,14 @@ export default function ChapterPage({ params }: PageProps) {
 
         <main className="flex-1 lg:ml-64 flex flex-col overflow-hidden">
           {/* Thin title bar — only text above the canvas */}
-          <div className="shrink-0 h-10 flex items-center gap-2 px-4 border-b border-gray-200 bg-white/90 backdrop-blur-sm">
-            <span className="text-xs font-mono text-muted">{chapter.category}</span>
-            <span className="text-gray-300 text-xs">/</span>
-            <h1 className="text-sm font-mono text-gray-900 truncate">{chapter.title}</h1>
+          <div className="shrink-0 h-10 flex items-center gap-2 px-4 border-b border-gray-200 dark:border-neutral-800 bg-white/90 dark:bg-neutral-950/90 backdrop-blur-sm">
+            <span className="text-xs font-mono text-muted dark:text-neutral-500">{chapter.category}</span>
+            <span className="text-gray-300 dark:text-neutral-700 text-xs">/</span>
+            <h1 className="text-sm font-mono text-gray-900 dark:text-neutral-100 truncate">{chapter.title}</h1>
           </div>
 
           {/* Canvas fills every remaining pixel — relative so Notes button anchors here */}
-          <div className="flex-1 relative overflow-hidden bg-[#f8fafc]">
+          <div className="flex-1 relative overflow-hidden bg-[#f8fafc] dark:bg-[#111111]">
             <div className="absolute inset-0">
               <ExcalidrawViewer diagramPath={chapter.diagramPath} title={chapter.title} />
             </div>
