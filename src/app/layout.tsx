@@ -26,9 +26,24 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     siteName: 'DesigningSystems.dev',
+    title: 'DesigningSystems.dev — Learn System Design',
+    description:
+      'Master system design concepts through interactive Excalidraw diagrams. Topics include scaling, databases, architecture patterns, and more.',
+    images: [
+      {
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'DesigningSystems.dev — Learn System Design',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
+    title: 'DesigningSystems.dev — Learn System Design',
+    description:
+      'Master system design concepts through interactive Excalidraw diagrams. Topics include scaling, databases, architecture patterns, and more.',
+    images: ['/opengraph-image'],
   },
 }
 
