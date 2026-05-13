@@ -27,7 +27,6 @@ export function Sidebar({ categories, activeFullSlug }: SidebarProps) {
     return () => window.removeEventListener('toggleSidebar', handler)
   }, [])
 
-  // Restore scroll position from sessionStorage on mount
   useEffect(() => {
     const saved = sessionStorage.getItem('sidebar-scroll')
     if (saved && sidebarRef.current) {
@@ -62,18 +61,18 @@ export function Sidebar({ categories, activeFullSlug }: SidebarProps) {
         ref={sidebarRef}
         onScroll={handleScroll}
         className={`
-          fixed left-0 top-14 bottom-0 w-64 border-r border-gray-200 bg-white/95 backdrop-blur-md
+          fixed left-0 top-14 bottom-0 w-64 border-r border-gray-200 dark:border-neutral-800 bg-white/95 dark:bg-neutral-950/95 backdrop-blur-md
           overflow-y-auto z-20 transition-transform duration-300 ease-in-out
           ${mobileOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
         `}
       >
         {/* Progress bar */}
-        <div className="px-4 py-3 border-b border-gray-200">
-          <div className="flex items-center justify-between text-xs text-muted mb-1.5 font-mono">
+        <div className="px-4 py-3 border-b border-gray-200 dark:border-neutral-800">
+          <div className="flex items-center justify-between text-xs text-muted dark:text-neutral-500 mb-1.5 font-mono">
             <span>Progress</span>
             <span className="text-brand-600">{Math.round(progress)}%</span>
           </div>
-          <div className="w-full h-1 bg-gray-200 rounded-full overflow-hidden">
+          <div className="w-full h-1 bg-gray-200 dark:bg-neutral-800 rounded-full overflow-hidden">
             <motion.div
               className="h-full bg-brand-500 rounded-full"
               initial={{ width: 0 }}
@@ -92,7 +91,7 @@ export function Sidebar({ categories, activeFullSlug }: SidebarProps) {
           {categories.map(cat => (
             <div key={cat.categorySlug} className="mb-4">
               <div className="px-4 py-1">
-                <span className="text-xs font-semibold uppercase tracking-wider text-muted font-mono">
+                <span className="text-xs font-semibold uppercase tracking-wider text-muted dark:text-neutral-500 font-mono">
                   {cat.category}
                 </span>
               </div>
@@ -106,7 +105,7 @@ export function Sidebar({ categories, activeFullSlug }: SidebarProps) {
                       className={`block px-4 py-2 text-sm transition-colors rounded-lg mx-2 ${
                         isActive
                           ? 'bg-brand-500/15 text-brand-600 font-medium border-l-2 border-brand-500 pl-3.5'
-                          : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                          : 'text-gray-600 dark:text-neutral-400 hover:text-gray-900 dark:hover:text-neutral-100 hover:bg-gray-100 dark:hover:bg-neutral-800'
                       }`}
                     >
                       {chapter.title}
