@@ -4,6 +4,7 @@ import './globals.css'
 import '@excalidraw/excalidraw/index.css'
 import { ToastProvider } from '@/components/ui/ToastProvider'
 import { AuthProvider } from '@/components/ui/AuthProvider'
+import { ThemeProvider } from '@/components/ui/ThemeProvider'
 
 const inter = Inter({
   variable: '--font-geist-sans',
@@ -38,13 +39,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${jetbrainsMono.variable} antialiased bg-canvas text-gray-900`}>
-        <ToastProvider>
-          <AuthProvider>
-            {children}
-          </AuthProvider>
-        </ToastProvider>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.variable} ${jetbrainsMono.variable} antialiased bg-canvas dark:bg-neutral-950 text-gray-900 dark:text-neutral-100`}>
+        <ThemeProvider>
+          <ToastProvider>
+            <AuthProvider>
+              {children}
+            </AuthProvider>
+          </ToastProvider>
+        </ThemeProvider>
       </body>
     </html>
   )
