@@ -21,6 +21,12 @@ export const blogMeta: Record<string, BlogMeta> = {
     description: 'they both are messaging patterns used in decoupled service. queues are used to assign work and pub/sub is used to broadcast messages to multiple subscribers.',
     tags: ['system-design'],
     readTime: 2,
+  },
+   'bloom-filters': {
+    title: 'Bloom Filters',
+    date: '2026-07-10',
+    description: 'A Bloom filter is a space-efficient probabilistic data structure that is used to test whether an element is a member of a set.',
+    tags: ['system-design'],
+    readTime: 2,
   }
-
 }
