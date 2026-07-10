@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   // Allow Excalidraw to work in Next.js
-  transpilePackages: ['@excalidraw/excalidraw'],
+  transpilePackages: ['@excalidraw/excalidraw', 'fuse.js'],
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback = {
