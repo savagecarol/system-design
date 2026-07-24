@@ -8,6 +8,7 @@ export interface BlogPost {
   date: string
   description: string
   tags: string[]
+  companies: string[]
   readTime: number
   diagramPath: string
 }
@@ -41,6 +42,7 @@ export function getAllBlogPosts(): BlogPost[] {
       date: meta.date || '',
       description: meta.description || '',
       tags: meta.tags || [],
+      companies: meta.companies || [],
       readTime: meta.readTime || 5,
       diagramPath: `/blogs/${encodeURIComponent(filename)}.excalidraw`,
     }

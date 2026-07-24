@@ -17,7 +17,15 @@ interface BlogContentProps {
 
 export function BlogContent({ posts }: BlogContentProps) {
   const [query, setQuery] = useState('')
+  const [selectedCompany, setSelectedCompany] = useState<string | null>(null)
   const [page, setPage] = useState(1)
+
+  // Collect all unique companies across posts
+  const allCompanies = useMemo(() => {
+    const set = new Set<string>()
+    posts.forEach(p => p.companies.forEach(c => set.add(c)))
+    return Array.from(set).sort()
+  }, [posts])
 
   const fuse = useMemo(
     () =>
@@ -30,9 +38,15 @@ export function BlogContent({ posts }: BlogContentProps) {
   )
 
   const filtered = useMemo(() => {
-    if (!query.trim()) return posts
-    return fuse.search(query.trim()).map(r => r.item)
-  }, [query, fuse, posts])
+    let result = posts
+    if (query.trim()) {
+      result = fuse.search(query.trim()).map(r => r.item)
+    }
+    if (selectedCompany) {
+      result = result.filter(p => p.companies.includes(selectedCompany))
+    }
+    return result
+  }, [query, fuse, posts, selectedCompany])
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / POSTS_PER_PAGE))
   const currentPage = Math.min(page, totalPages)
@@ -40,6 +54,11 @@ export function BlogContent({ posts }: BlogContentProps) {
 
   function handleSearch(value: string) {
     setQuery(value)
+    setPage(1)
+  }
+
+  function handleCompanyFilter(company: string) {
+    setSelectedCompany(prev => (prev === company ? null : company))
     setPage(1)
   }
 
@@ -54,7 +73,7 @@ export function BlogContent({ posts }: BlogContentProps) {
             Deep-dives, visual explanations, and system design insights.
           </p>
 
-          <div className="relative">
+          <div className="relative mb-4">
             <svg
               className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted"
               fill="none"
@@ -76,6 +95,33 @@ export function BlogContent({ posts }: BlogContentProps) {
               className="w-full pl-9 pr-4 py-2.5 rounded-lg border border-gray-200 bg-white text-sm text-gray-900 placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500 transition"
             />
           </div>
+
+          {allCompanies.length > 0 && (
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-xs text-muted font-mono">Filter by company:</span>
+              {allCompanies.map(company => (
+                <button
+                  key={company}
+                  onClick={() => handleCompanyFilter(company)}
+                  className={`px-3 py-1 rounded-full text-xs font-mono border transition-colors duration-150 ${
+                    selectedCompany === company
+                      ? 'bg-red-500 text-white border-red-500'
+                      : 'bg-white text-red-600 border-red-400 hover:bg-red-50'
+                  }`}
+                >
+                  {company}
+                </button>
+              ))}
+              {selectedCompany && (
+                <button
+                  onClick={() => { setSelectedCompany(null); setPage(1) }}
+                  className="px-2 py-1 rounded-full text-xs font-mono text-muted border border-gray-200 hover:bg-gray-50 transition-colors"
+                >
+                  Clear
+                </button>
+              )}
+            </div>
+          )}
         </motion.div>
 
         {paginated.length === 0 ? (
@@ -139,7 +185,6 @@ function BlogCard({ post }: { post: BlogPost }) {
         href={`/blog/${post.slug}`}
         className="group flex items-start gap-6 p-5 rounded-xl border border-gray-200 bg-white hover:bg-gray-50 hover:border-brand-500/50 transition-colors duration-200"
       >
-        {/* Left: title + meta */}
         <div className="flex-1 min-w-0">
           <div className="flex items-start justify-between gap-4 mb-2">
             <h2 className="font-semibold text-gray-900 group-hover:text-brand-600 transition-colors leading-tight">
@@ -161,6 +206,19 @@ function BlogCard({ post }: { post: BlogPost }) {
           )}
 
           <div className="flex items-center gap-3 flex-wrap">
+            {post.companies.length > 0 && (
+              <div className="flex items-center gap-1.5 flex-wrap">
+                {post.companies.map(company => (
+                  <span
+                    key={company}
+                    className="px-2 py-0.5 rounded-full text-xs font-mono bg-red-50 text-red-600 border border-red-400"
+                  >
+                    {company}
+                  </span>
+                ))}
+              </div>
+            )}
+
             {post.tags.length > 0 && (
               <div className="flex items-center gap-1.5 flex-wrap">
                 {post.tags.map(tag => (
@@ -173,6 +231,7 @@ function BlogCard({ post }: { post: BlogPost }) {
                 ))}
               </div>
             )}
+
             <div className="flex items-center gap-1 text-xs text-muted font-mono ml-auto">
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
