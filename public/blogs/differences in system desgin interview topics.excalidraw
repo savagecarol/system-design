@@ -1,0 +1,1852 @@
+{
+	"type": "excalidraw",
+	"version": 2,
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag2.23.2",
+	"elements": [
+		{
+			"id": "OKkC0jS9",
+			"type": "rectangle",
+			"x": 589.8655601744426,
+			"y": -2005.0973591506045,
+			"width": 3652.096628941698,
+			"height": 337.7542723603091,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffec99",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"MxeRIyXOtUGzGiF4-Rbhx"
+			],
+			"frameId": null,
+			"index": "a0",
+			"roundness": {
+				"type": 3
+			},
+			"seed": 1829144897,
+			"version": 896,
+			"versionNonce": 467407311,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"type": "text",
+					"id": "BTCczvWy"
+				},
+				{
+					"id": "pZsyp74s",
+					"type": "arrow"
+				},
+				{
+					"id": "eUYnLGD5",
+					"type": "arrow"
+				},
+				{
+					"id": "UHRrafiQ",
+					"type": "arrow"
+				},
+				{
+					"id": "Ds7jLJYS",
+					"type": "arrow"
+				},
+				{
+					"id": "wTZRaoyE",
+					"type": "arrow"
+				}
+			],
+			"updated": 1785621909264,
+			"link": null,
+			"locked": false
+		},
+		{
+			"id": "BTCczvWy",
+			"type": "text",
+			"x": 795.5354566765418,
+			"y": -1912.792376367619,
+			"width": 3240.7568359375,
+			"height": 153.14430679433835,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"MxeRIyXOtUGzGiF4-Rbhx"
+			],
+			"frameId": null,
+			"index": "a1",
+			"roundness": null,
+			"seed": 510552911,
+			"version": 1310,
+			"versionNonce": 1808449,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785621771006,
+			"locked": false,
+			"text": "System Design Common Differences Asked in Interview",
+			"rawText": "System Design Common Differences Asked in Interview",
+			"fontSize": 122.51544543547068,
+			"fontFamily": 5,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"containerId": "OKkC0jS9",
+			"originalText": "System Design Common Differences Asked in Interview",
+			"autoResize": true,
+			"lineHeight": 1.25,
+			"hasTextLink": false
+		},
+		{
+			"id": "5u6nqJsn",
+			"type": "rectangle",
+			"x": 1081.227380600084,
+			"y": -1304.9842141416002,
+			"width": 596.0904085176348,
+			"height": 130.69059574312104,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"v4umXXQ9IuFH06zL6tr0G"
+			],
+			"frameId": null,
+			"index": "a2",
+			"roundness": {
+				"type": 3
+			},
+			"seed": 1940600129,
+			"version": 1428,
+			"versionNonce": 1560455215,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"type": "text",
+					"id": "rt6q82vm"
+				},
+				{
+					"id": "UHRrafiQ",
+					"type": "arrow"
+				},
+				{
+					"id": "kh3kPjfE",
+					"type": "arrow"
+				}
+			],
+			"updated": 1785622010725,
+			"link": null,
+			"locked": false
+		},
+		{
+			"id": "rt6q82vm",
+			"type": "text",
+			"x": 1183.5226916704248,
+			"y": -1278.2540089504369,
+			"width": 391.4997863769531,
+			"height": 77.23018536079438,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"v4umXXQ9IuFH06zL6tr0G"
+			],
+			"frameId": null,
+			"index": "a3",
+			"roundness": null,
+			"seed": 107170017,
+			"version": 1822,
+			"versionNonce": 1979435599,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785622010725,
+			"locked": false,
+			"text": "Ipv4 vs Ipv6",
+			"rawText": "Ipv4 vs Ipv6",
+			"fontSize": 61.78414828863551,
+			"fontFamily": 5,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"containerId": "5u6nqJsn",
+			"originalText": "Ipv4 vs Ipv6",
+			"autoResize": true,
+			"lineHeight": 1.25,
+			"hasTextLink": false
+		},
+		{
+			"id": "ZfAddVUZ",
+			"type": "rectangle",
+			"x": -561.3756183144942,
+			"y": -725.8891881980744,
+			"width": 2234.927756131506,
+			"height": 1494.2555394296094,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#a5d8ff",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "a4",
+			"roundness": {
+				"type": 3
+			},
+			"seed": 263395279,
+			"version": 1705,
+			"versionNonce": 969767087,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"id": "EbrbFxCQ",
+					"type": "text"
+				},
+				{
+					"id": "kh3kPjfE",
+					"type": "arrow"
+				}
+			],
+			"updated": 1785622008708,
+			"link": null,
+			"locked": false
+		},
+		{
+			"id": "EbrbFxCQ",
+			"type": "text",
+			"x": -520.8553437643661,
+			"y": -717.4470665063817,
+			"width": 2153.88720703125,
+			"height": 1477.371296046224,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#a5d8ff",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "a5",
+			"roundness": null,
+			"seed": 1579498575,
+			"version": 1906,
+			"versionNonce": 35162831,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785622008708,
+			"locked": false,
+			"text": "+--------------------+----------------------------------------------+----------------------------------------------+\n| Feature            | IPv4                                         | IPv6                                         |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Definition         | Fourth version of the Internet Protocol      | Sixth version of the Internet Protocol       |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Address size       | Uses 32-bit addresses                        | Uses 128-bit addresses                       |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Address format     | Decimal, such as 192.168.1.1                 | Hexadecimal, such as 2001:db8::1             |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Address capacity   | About 4.3 billion unique addresses           | About 3.4 x 10^38 unique addresses           |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Working            | Routes packets using 32-bit IP addresses     | Routes packets using 128-bit IP addresses    |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Configuration      | Manual setup or DHCP is commonly used        | Supports SLAAC, DHCPv6, or manual setup      |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Header             | Variable header of 20 to 60 bytes            | Fixed 40-byte base header                    |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Broadcast          | Supports broadcast communication             | Uses multicast instead of broadcast          |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Fragmentation      | Routers and hosts can fragment packets       | Only the sending host fragments packets      |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Security           | IPsec support is optional                    | Designed with built-in IPsec support         |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| NAT                | Commonly uses NAT to conserve addresses      | Usually avoids NAT due to vast address space |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Key difference     | Smaller address space and wider deployment   | Huge address space and improved networking   |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Advantages         | Mature, compatible, and widely supported     | Scalable, efficient, and easier to configure |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Disadvantages      | Address shortage and heavy dependence on NAT | Limited support in some legacy systems       |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Best use cases     | Existing networks and legacy applications    | Modern, cloud, IoT, and large-scale networks |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Example            | 192.168.10.25                                | 2001:db8:85a3::8a2e:370:7334                 |\n+--------------------+----------------------------------------------+----------------------------------------------+",
+			"rawText": "+--------------------+----------------------------------------------+----------------------------------------------+\n| Feature            | IPv4                                         | IPv6                                         |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Definition         | Fourth version of the Internet Protocol      | Sixth version of the Internet Protocol       |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Address size       | Uses 32-bit addresses                        | Uses 128-bit addresses                       |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Address format     | Decimal, such as 192.168.1.1                 | Hexadecimal, such as 2001:db8::1             |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Address capacity   | About 4.3 billion unique addresses           | About 3.4 x 10^38 unique addresses           |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Working            | Routes packets using 32-bit IP addresses     | Routes packets using 128-bit IP addresses    |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Configuration      | Manual setup or DHCP is commonly used        | Supports SLAAC, DHCPv6, or manual setup      |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Header             | Variable header of 20 to 60 bytes            | Fixed 40-byte base header                    |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Broadcast          | Supports broadcast communication             | Uses multicast instead of broadcast          |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Fragmentation      | Routers and hosts can fragment packets       | Only the sending host fragments packets      |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Security           | IPsec support is optional                    | Designed with built-in IPsec support         |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| NAT                | Commonly uses NAT to conserve addresses      | Usually avoids NAT due to vast address space |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Key difference     | Smaller address space and wider deployment   | Huge address space and improved networking   |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Advantages         | Mature, compatible, and widely supported     | Scalable, efficient, and easier to configure |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Disadvantages      | Address shortage and heavy dependence on NAT | Limited support in some legacy systems       |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Best use cases     | Existing networks and legacy applications    | Modern, cloud, IoT, and large-scale networks |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Example            | 192.168.10.25                                | 2001:db8:85a3::8a2e:370:7334                 |\n+--------------------+----------------------------------------------+----------------------------------------------+",
+			"fontSize": 33.768486766770835,
+			"fontFamily": 8,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"containerId": "ZfAddVUZ",
+			"originalText": "+--------------------+----------------------------------------------+----------------------------------------------+\n| Feature            | IPv4                                         | IPv6                                         |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Definition         | Fourth version of the Internet Protocol      | Sixth version of the Internet Protocol       |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Address size       | Uses 32-bit addresses                        | Uses 128-bit addresses                       |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Address format     | Decimal, such as 192.168.1.1                 | Hexadecimal, such as 2001:db8::1             |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Address capacity   | About 4.3 billion unique addresses           | About 3.4 x 10^38 unique addresses           |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Working            | Routes packets using 32-bit IP addresses     | Routes packets using 128-bit IP addresses    |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Configuration      | Manual setup or DHCP is commonly used        | Supports SLAAC, DHCPv6, or manual setup      |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Header             | Variable header of 20 to 60 bytes            | Fixed 40-byte base header                    |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Broadcast          | Supports broadcast communication             | Uses multicast instead of broadcast          |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Fragmentation      | Routers and hosts can fragment packets       | Only the sending host fragments packets      |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Security           | IPsec support is optional                    | Designed with built-in IPsec support         |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| NAT                | Commonly uses NAT to conserve addresses      | Usually avoids NAT due to vast address space |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Key difference     | Smaller address space and wider deployment   | Huge address space and improved networking   |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Advantages         | Mature, compatible, and widely supported     | Scalable, efficient, and easier to configure |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Disadvantages      | Address shortage and heavy dependence on NAT | Limited support in some legacy systems       |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Best use cases     | Existing networks and legacy applications    | Modern, cloud, IoT, and large-scale networks |\n+--------------------+----------------------------------------------+----------------------------------------------+\n| Example            | 192.168.10.25                                | 2001:db8:85a3::8a2e:370:7334                 |\n+--------------------+----------------------------------------------+----------------------------------------------+",
+			"autoResize": true,
+			"lineHeight": 1.25,
+			"hasTextLink": false
+		},
+		{
+			"id": "7cVfq9wR",
+			"type": "rectangle",
+			"x": 2014.7226963461912,
+			"y": -1043.3207065134388,
+			"width": 2956.3174993199773,
+			"height": 1970.854782627275,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffc9c9",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "a6",
+			"roundness": {
+				"type": 3
+			},
+			"seed": 401683087,
+			"version": 1397,
+			"versionNonce": 1405004175,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"type": "text",
+					"id": "5UNz3F30"
+				},
+				{
+					"id": "WcBy3XVL",
+					"type": "arrow"
+				}
+			],
+			"updated": 1785622015058,
+			"link": null,
+			"locked": false
+		},
+		{
+			"id": "5UNz3F30",
+			"type": "text",
+			"x": 2023.2502204202424,
+			"y": -1008.1268711093803,
+			"width": 2939.262451171875,
+			"height": 1900.467111819158,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#a5d8ff",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "a7",
+			"roundness": null,
+			"seed": 1793987457,
+			"version": 1375,
+			"versionNonce": 745578415,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785622015058,
+			"locked": false,
+			"text": "+--------------------+---------------------------------------------+---------------------------------------------+\n| Feature            | TCP                                         | UDP                                         |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Definition         | Connection-oriented transport protocol      | Connectionless transport protocol           |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Working            | Establishes a connection before sending     | Sends datagrams without a prior connection  |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Reliability        | Guarantees ordered and reliable delivery    | Does not guarantee delivery or ordering     |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Acknowledgments    | Uses acknowledgments and retransmissions    | Uses no built-in acknowledgments             |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Data ordering      | Delivers data in the correct sequence       | Packets may arrive out of order              |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Flow control       | Controls the sender's transmission rate     | Has no built-in flow control                 |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Congestion control | Adjusts traffic based on network conditions | Has no built-in congestion control           |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Header size        | Minimum header size is 20 bytes             | Header size is 8 bytes                       |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Speed              | Slower due to reliability mechanisms       | Faster due to lower protocol overhead        |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Communication type | Byte-stream communication                   | Message-based datagram communication         |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Key difference     | Prioritizes reliable and ordered delivery   | Prioritizes speed and low latency             |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Advantages         | Reliable, ordered, and error-checked        | Fast, lightweight, and supports multicast    |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Disadvantages      | Higher latency and resource usage           | Packets can be lost, duplicated, or reordered|\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Best use cases     | Web, email, file transfer, and databases    | Streaming, gaming, DNS, and voice calls      |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Example            | HTTPS connection downloading a web page    | Live video stream or DNS lookup              |\n+--------------------+---------------------------------------------+---------------------------------------------+",
+			"rawText": "+--------------------+---------------------------------------------+---------------------------------------------+\n| Feature            | TCP                                         | UDP                                         |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Definition         | Connection-oriented transport protocol      | Connectionless transport protocol           |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Working            | Establishes a connection before sending     | Sends datagrams without a prior connection  |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Reliability        | Guarantees ordered and reliable delivery    | Does not guarantee delivery or ordering     |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Acknowledgments    | Uses acknowledgments and retransmissions    | Uses no built-in acknowledgments             |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Data ordering      | Delivers data in the correct sequence       | Packets may arrive out of order              |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Flow control       | Controls the sender's transmission rate     | Has no built-in flow control                 |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Congestion control | Adjusts traffic based on network conditions | Has no built-in congestion control           |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Header size        | Minimum header size is 20 bytes             | Header size is 8 bytes                       |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Speed              | Slower due to reliability mechanisms       | Faster due to lower protocol overhead        |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Communication type | Byte-stream communication                   | Message-based datagram communication         |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Key difference     | Prioritizes reliable and ordered delivery   | Prioritizes speed and low latency             |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Advantages         | Reliable, ordered, and error-checked        | Fast, lightweight, and supports multicast    |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Disadvantages      | Higher latency and resource usage           | Packets can be lost, duplicated, or reordered|\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Best use cases     | Web, email, file transfer, and databases    | Streaming, gaming, DNS, and voice calls      |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Example            | HTTPS connection downloading a web page    | Live video stream or DNS lookup              |\n+--------------------+---------------------------------------------+---------------------------------------------+",
+			"fontSize": 46.07192998349474,
+			"fontFamily": 8,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"containerId": "7cVfq9wR",
+			"originalText": "+--------------------+---------------------------------------------+---------------------------------------------+\n| Feature            | TCP                                         | UDP                                         |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Definition         | Connection-oriented transport protocol      | Connectionless transport protocol           |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Working            | Establishes a connection before sending     | Sends datagrams without a prior connection  |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Reliability        | Guarantees ordered and reliable delivery    | Does not guarantee delivery or ordering     |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Acknowledgments    | Uses acknowledgments and retransmissions    | Uses no built-in acknowledgments             |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Data ordering      | Delivers data in the correct sequence       | Packets may arrive out of order              |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Flow control       | Controls the sender's transmission rate     | Has no built-in flow control                 |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Congestion control | Adjusts traffic based on network conditions | Has no built-in congestion control           |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Header size        | Minimum header size is 20 bytes             | Header size is 8 bytes                       |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Speed              | Slower due to reliability mechanisms       | Faster due to lower protocol overhead        |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Communication type | Byte-stream communication                   | Message-based datagram communication         |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Key difference     | Prioritizes reliable and ordered delivery   | Prioritizes speed and low latency             |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Advantages         | Reliable, ordered, and error-checked        | Fast, lightweight, and supports multicast    |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Disadvantages      | Higher latency and resource usage           | Packets can be lost, duplicated, or reordered|\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Best use cases     | Web, email, file transfer, and databases    | Streaming, gaming, DNS, and voice calls      |\n+--------------------+---------------------------------------------+---------------------------------------------+\n| Example            | HTTPS connection downloading a web page    | Live video stream or DNS lookup              |\n+--------------------+---------------------------------------------+---------------------------------------------+",
+			"autoResize": true,
+			"lineHeight": 1.25,
+			"hasTextLink": false
+		},
+		{
+			"id": "6LBebyKu-2AZKYTxmrJcI",
+			"type": "rectangle",
+			"x": 2348.8403368329396,
+			"y": -1369.7793915957852,
+			"width": 596.0904085176348,
+			"height": 130.69059574312104,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"2_3U5CWhU_bP_S2EX8nOg"
+			],
+			"frameId": null,
+			"index": "a8",
+			"roundness": {
+				"type": 3
+			},
+			"seed": 1204377025,
+			"version": 1517,
+			"versionNonce": 324716239,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"type": "text",
+					"id": "8SM8Crqi"
+				},
+				{
+					"id": "eUYnLGD5",
+					"type": "arrow"
+				},
+				{
+					"id": "WcBy3XVL",
+					"type": "arrow"
+				}
+			],
+			"updated": 1785622013809,
+			"link": null,
+			"locked": false,
+			"hasTextLink": false
+		},
+		{
+			"id": "8SM8Crqi",
+			"type": "text",
+			"x": 2451.4445315702724,
+			"y": -1343.0491864046219,
+			"width": 390.88201904296875,
+			"height": 77.23018536079438,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"2_3U5CWhU_bP_S2EX8nOg"
+			],
+			"frameId": null,
+			"index": "a9",
+			"roundness": null,
+			"seed": 1115354529,
+			"version": 1923,
+			"versionNonce": 1964446959,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1785622013809,
+			"locked": false,
+			"text": "TCP Vs UDP",
+			"rawText": "TCP Vs UDP",
+			"fontSize": 61.78414828863551,
+			"fontFamily": 5,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"containerId": "6LBebyKu-2AZKYTxmrJcI",
+			"originalText": "TCP Vs UDP",
+			"autoResize": true,
+			"lineHeight": 1.25,
+			"hasTextLink": false
+		},
+		{
+			"id": "K27pHBh5GOEo9oJeBgX6q",
+			"type": "rectangle",
+			"x": 4699.144054619639,
+			"y": -1613.9756962386882,
+			"width": 647.1461058668672,
+			"height": 141.8843667001893,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"dpqJnJffOMafTBQqyqMRr"
+			],
+			"frameId": null,
+			"index": "aA",
+			"roundness": {
+				"type": 3
+			},
+			"seed": 2010390703,
+			"version": 1652,
+			"versionNonce": 511782639,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"type": "text",
+					"id": "ZNIz28ks"
+				},
+				{
+					"id": "pZsyp74s",
+					"type": "arrow"
+				},
+				{
+					"id": "u8nTPalW",
+					"type": "arrow"
+				}
+			],
+			"updated": 1785622020233,
+			"link": null,
+			"locked": false,
+			"hasTextLink": false
+		},
+		{
+			"id": "ZNIz28ks",
+			"type": "text",
+			"x": 4731.331517953463,
+			"y": -1584.9560241364288,
+			"width": 582.7711791992188,
+			"height": 83.84502249567035,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"dpqJnJffOMafTBQqyqMRr"
+			],
+			"frameId": null,
+			"index": "aB",
+			"roundness": null,
+			"seed": 420098767,
+			"version": 2113,
+			"versionNonce": 2071689487,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1785622020233,
+			"locked": false,
+			"text": "Http/1.1 vs Http2",
+			"rawText": "Http/1.1 vs Http2",
+			"fontSize": 67.07601799653628,
+			"fontFamily": 5,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"containerId": "K27pHBh5GOEo9oJeBgX6q",
+			"originalText": "Http/1.1 vs Http2",
+			"autoResize": true,
+			"lineHeight": 1.25,
+			"hasTextLink": false
+		},
+		{
+			"id": "gzej9hQMm-YAoczwmE-pe",
+			"type": "rectangle",
+			"x": 5221.600479894119,
+			"y": -1024.133558306126,
+			"width": 3038.2405562688746,
+			"height": 1913.2648701479065,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffc9c9",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "aC",
+			"roundness": {
+				"type": 3
+			},
+			"seed": 1308598529,
+			"version": 1927,
+			"versionNonce": 1410879855,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"type": "text",
+					"id": "hqPPAkMG"
+				},
+				{
+					"id": "u8nTPalW",
+					"type": "arrow"
+				}
+			],
+			"updated": 1785622017500,
+			"link": null,
+			"locked": false,
+			"hasTextLink": false
+		},
+		{
+			"id": "hqPPAkMG",
+			"type": "text",
+			"x": 5233.081109591057,
+			"y": -1017.7346791417517,
+			"width": 3015.279296875,
+			"height": 1900.467111819158,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffec99",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "aD",
+			"roundness": null,
+			"seed": 1619985231,
+			"version": 861,
+			"versionNonce": 1728727951,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785622017500,
+			"locked": false,
+			"text": "+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Feature            | HTTP/1.1                                      | HTTP/2                                        |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Definition         | Text-based HTTP protocol version              | Binary-framed HTTP protocol version           |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Working            | Sends requests through one or more connections| Sends multiple streams through one connection |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Data format        | Uses human-readable text messages             | Uses binary frames                            |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Multiplexing       | Does not support true request multiplexing    | Multiplexes many streams concurrently         |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Request handling   | Responses generally follow request order      | Responses can be interleaved across streams   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Header compression | Sends repetitive headers with limited reuse   | Compresses headers using HPACK                 |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Connections        | Often opens several TCP connections           | Usually uses one TCP connection per origin    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Head-of-line issue | Pipelining can block later HTTP responses     | Removes HTTP-level blocking between streams   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Server push        | Does not support server push                   | Supports server push at the protocol level    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Encryption         | Can operate with or without TLS               | Can operate without TLS, but commonly uses it |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Key difference     | Simple text messages with sequential limits   | Binary multiplexing improves parallel transfer|\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Advantages         | Simple, mature, and widely compatible         | Faster loading and lower connection overhead  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Disadvantages      | More connections and repeated header overhead | More complex and still depends on TCP         |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Best use cases     | Legacy systems and simple web services        | Modern websites and high-traffic APIs         |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Example            | GET /index.html HTTP/1.1                      | Multiple CSS, JS, and image streams together  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+",
+			"rawText": "+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Feature            | HTTP/1.1                                      | HTTP/2                                        |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Definition         | Text-based HTTP protocol version              | Binary-framed HTTP protocol version           |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Working            | Sends requests through one or more connections| Sends multiple streams through one connection |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Data format        | Uses human-readable text messages             | Uses binary frames                            |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Multiplexing       | Does not support true request multiplexing    | Multiplexes many streams concurrently         |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Request handling   | Responses generally follow request order      | Responses can be interleaved across streams   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Header compression | Sends repetitive headers with limited reuse   | Compresses headers using HPACK                 |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Connections        | Often opens several TCP connections           | Usually uses one TCP connection per origin    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Head-of-line issue | Pipelining can block later HTTP responses     | Removes HTTP-level blocking between streams   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Server push        | Does not support server push                   | Supports server push at the protocol level    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Encryption         | Can operate with or without TLS               | Can operate without TLS, but commonly uses it |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Key difference     | Simple text messages with sequential limits   | Binary multiplexing improves parallel transfer|\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Advantages         | Simple, mature, and widely compatible         | Faster loading and lower connection overhead  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Disadvantages      | More connections and repeated header overhead | More complex and still depends on TCP         |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Best use cases     | Legacy systems and simple web services        | Modern websites and high-traffic APIs         |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Example            | GET /index.html HTTP/1.1                      | Multiple CSS, JS, and image streams together  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+",
+			"fontSize": 46.07192998349474,
+			"fontFamily": 8,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"containerId": "gzej9hQMm-YAoczwmE-pe",
+			"originalText": "+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Feature            | HTTP/1.1                                      | HTTP/2                                        |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Definition         | Text-based HTTP protocol version              | Binary-framed HTTP protocol version           |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Working            | Sends requests through one or more connections| Sends multiple streams through one connection |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Data format        | Uses human-readable text messages             | Uses binary frames                            |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Multiplexing       | Does not support true request multiplexing    | Multiplexes many streams concurrently         |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Request handling   | Responses generally follow request order      | Responses can be interleaved across streams   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Header compression | Sends repetitive headers with limited reuse   | Compresses headers using HPACK                 |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Connections        | Often opens several TCP connections           | Usually uses one TCP connection per origin    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Head-of-line issue | Pipelining can block later HTTP responses     | Removes HTTP-level blocking between streams   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Server push        | Does not support server push                   | Supports server push at the protocol level    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Encryption         | Can operate with or without TLS               | Can operate without TLS, but commonly uses it |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Key difference     | Simple text messages with sequential limits   | Binary multiplexing improves parallel transfer|\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Advantages         | Simple, mature, and widely compatible         | Faster loading and lower connection overhead  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Disadvantages      | More connections and repeated header overhead | More complex and still depends on TCP         |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Best use cases     | Legacy systems and simple web services        | Modern websites and high-traffic APIs         |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Example            | GET /index.html HTTP/1.1                      | Multiple CSS, JS, and image streams together  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+",
+			"autoResize": true,
+			"lineHeight": 1.25,
+			"hasTextLink": false
+		},
+		{
+			"id": "u8nTPalW",
+			"type": "arrow",
+			"x": 5353.2901604865065,
+			"y": -1540.1590362831241,
+			"width": 1245.7410357137478,
+			"height": 509.0254779769982,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffec99",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "aE",
+			"roundness": {
+				"type": 2
+			},
+			"seed": 505412527,
+			"version": 955,
+			"versionNonce": 1194180943,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785622020234,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					1245.7410357137478,
+					509.0254779769982
+				]
+			],
+			"startBinding": {
+				"elementId": "K27pHBh5GOEo9oJeBgX6q",
+				"mode": "orbit",
+				"fixedPoint": [
+					1.0000000000000004,
+					0.5001
+				]
+			},
+			"endBinding": {
+				"elementId": "gzej9hQMm-YAoczwmE-pe",
+				"mode": "orbit",
+				"fixedPoint": [
+					0.7871043809476117,
+					0.2128956190523882
+				]
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"elbowed": false,
+			"moveMidPointsWithElement": false
+		},
+		{
+			"id": "pZsyp74s",
+			"type": "arrow",
+			"x": 4237.340852826621,
+			"y": -1803.8365469984599,
+			"width": 454.80320179301907,
+			"height": 256.8637623913505,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffec99",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "aF",
+			"roundness": {
+				"type": 2
+			},
+			"seed": 631507617,
+			"version": 770,
+			"versionNonce": 1927773999,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785622020234,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					454.80320179301907,
+					256.8637623913505
+				]
+			],
+			"startBinding": {
+				"elementId": "OKkC0jS9",
+				"mode": "inside",
+				"fixedPoint": [
+					0.9987346073340732,
+					0.5958793970115761
+				]
+			},
+			"endBinding": {
+				"elementId": "K27pHBh5GOEo9oJeBgX6q",
+				"mode": "orbit",
+				"fixedPoint": [
+					0,
+					0.5001
+				]
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"elbowed": false,
+			"moveMidPointsWithElement": false
+		},
+		{
+			"id": "kh3kPjfE",
+			"type": "arrow",
+			"x": 1382.8435090453909,
+			"y": -1176.208413320354,
+			"width": 800.7677568909212,
+			"height": 460.94157518768975,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffec99",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "aG",
+			"roundness": {
+				"type": 2
+			},
+			"seed": 886430127,
+			"version": 842,
+			"versionNonce": 70959759,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785622010725,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-800.7677568909212,
+					460.94157518768975
+				]
+			],
+			"startBinding": {
+				"elementId": "5u6nqJsn",
+				"mode": "inside",
+				"fixedPoint": [
+					0.5059905748112435,
+					0.9853486403441104
+				]
+			},
+			"endBinding": {
+				"elementId": "ZfAddVUZ",
+				"mode": "inside",
+				"fixedPoint": [
+					0.5116278892379919,
+					0.007108790822662658
+				]
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"elbowed": false,
+			"moveMidPointsWithElement": false
+		},
+		{
+			"id": "eUYnLGD5",
+			"type": "arrow",
+			"x": 2422.071880658974,
+			"y": -1660.343086790295,
+			"width": 234.66096267696184,
+			"height": 283.5636951945098,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffec99",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "aH",
+			"roundness": {
+				"type": 2
+			},
+			"seed": 2049683855,
+			"version": 568,
+			"versionNonce": 308584207,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785622013810,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					234.66096267696184,
+					283.5636951945098
+				]
+			],
+			"startBinding": {
+				"elementId": "OKkC0jS9",
+				"mode": "orbit",
+				"fixedPoint": [
+					0.5001,
+					0.9999999999999999
+				]
+			},
+			"endBinding": {
+				"elementId": "6LBebyKu-2AZKYTxmrJcI",
+				"mode": "orbit",
+				"fixedPoint": [
+					0.5989944628460194,
+					0.4010055371539804
+				]
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"elbowed": false,
+			"moveMidPointsWithElement": false
+		},
+		{
+			"id": "WcBy3XVL",
+			"type": "arrow",
+			"x": 2653.5286966333815,
+			"y": -1261.3353286141619,
+			"width": 138.12446219472304,
+			"height": 211.01462210072282,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffec99",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "aI",
+			"roundness": {
+				"type": 2
+			},
+			"seed": 1482785121,
+			"version": 395,
+			"versionNonce": 599708111,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785622015059,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					138.12446219472304,
+					211.01462210072282
+				]
+			],
+			"startBinding": {
+				"elementId": "6LBebyKu-2AZKYTxmrJcI",
+				"mode": "inside",
+				"fixedPoint": [
+					0.5111445435905345,
+					0.8297770957810586
+				]
+			},
+			"endBinding": {
+				"elementId": "7cVfq9wR",
+				"mode": "orbit",
+				"fixedPoint": [
+					0.46902494154390056,
+					0.4690249415439004
+				]
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"elbowed": false,
+			"moveMidPointsWithElement": false
+		},
+		{
+			"id": "UHRrafiQ",
+			"type": "arrow",
+			"x": 2316.2224859242797,
+			"y": -1689.4329066478363,
+			"width": 866.9006654980785,
+			"height": 377.44869250623583,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffec99",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "aJ",
+			"roundness": {
+				"type": 2
+			},
+			"seed": 334399745,
+			"version": 692,
+			"versionNonce": 1942726767,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785622010725,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-866.9006654980785,
+					377.44869250623583
+				]
+			],
+			"startBinding": {
+				"elementId": "OKkC0jS9",
+				"mode": "inside",
+				"fixedPoint": [
+					0.4727029706905919,
+					0.9345979557766306
+				]
+			},
+			"endBinding": {
+				"elementId": "5u6nqJsn",
+				"mode": "orbit",
+				"fixedPoint": [
+					0.3927657674933914,
+					0.3927657674933911
+				]
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"elbowed": false,
+			"moveMidPointsWithElement": false
+		},
+		{
+			"id": "qS2MqwiHycNItgKCgSRq-",
+			"type": "rectangle",
+			"x": -3703.8416259725996,
+			"y": -2669.9016949801194,
+			"width": 3056.458427232165,
+			"height": 2028.4446951066434,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#a5d8ff",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "aK",
+			"roundness": {
+				"type": 3
+			},
+			"seed": 1823208143,
+			"version": 1907,
+			"versionNonce": 34715055,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"type": "text",
+					"id": "wbudW51L"
+				},
+				{
+					"id": "oOhTyAfF",
+					"type": "arrow"
+				}
+			],
+			"updated": 1785622048550,
+			"link": null,
+			"locked": false,
+			"hasTextLink": false
+		},
+		{
+			"id": "wbudW51L",
+			"type": "text",
+			"x": -3683.252304934642,
+			"y": -2663.502815815745,
+			"width": 3015.27978515625,
+			"height": 2015.6469367778948,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffec99",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "aL",
+			"roundness": null,
+			"seed": 1837071745,
+			"version": 633,
+			"versionNonce": 281880527,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785622048550,
+			"locked": false,
+			"text": "+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Feature            | REST                                          | GraphQL                                       |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Definition         | Architectural style for resource-based APIs   | Query language and runtime for APIs           |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Working            | Uses multiple endpoints for different resources| Uses one endpoint with client-defined queries |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Data fetching      | Server decides the response structure         | Client selects the exact fields it needs      |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Endpoints          | Usually exposes many resource-based endpoints | Usually exposes a single endpoint             |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Over-fetching      | May return more data than the client needs    | Reduces over-fetching with field selection    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Under-fetching     | May require multiple requests for related data| Can fetch related data in one request         |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Operations         | Commonly uses GET, POST, PUT, PATCH, DELETE   | Uses queries, mutations, and subscriptions    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Schema             | Schema is optional and often documented separately| Uses a strongly typed, discoverable schema |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Versioning         | Often uses URL or header-based API versions   | Usually evolves the schema without versions   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Caching            | Works naturally with standard HTTP caching    | Often needs client or application-level caching|\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Error handling     | Uses HTTP status codes for request outcomes   | Often returns errors within a response body   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Key difference     | Server controls fixed resource responses      | Client controls the requested response shape  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Advantages         | Simple, mature, cache-friendly, and scalable  | Flexible, efficient, typed, and discoverable  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Disadvantages      | Can cause over-fetching and extra requests    | More complex caching and query-cost control   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Best use cases     | Public APIs, CRUD services, and simple systems| Complex UIs, mobile apps, and connected data  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Example            | GET /users/42/orders                          | query { user(id: 42) { orders { id } } }      |\n+--------------------+-----------------------------------------------+-----------------------------------------------+",
+			"rawText": "+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Feature            | REST                                          | GraphQL                                       |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Definition         | Architectural style for resource-based APIs   | Query language and runtime for APIs           |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Working            | Uses multiple endpoints for different resources| Uses one endpoint with client-defined queries |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Data fetching      | Server decides the response structure         | Client selects the exact fields it needs      |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Endpoints          | Usually exposes many resource-based endpoints | Usually exposes a single endpoint             |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Over-fetching      | May return more data than the client needs    | Reduces over-fetching with field selection    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Under-fetching     | May require multiple requests for related data| Can fetch related data in one request         |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Operations         | Commonly uses GET, POST, PUT, PATCH, DELETE   | Uses queries, mutations, and subscriptions    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Schema             | Schema is optional and often documented separately| Uses a strongly typed, discoverable schema |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Versioning         | Often uses URL or header-based API versions   | Usually evolves the schema without versions   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Caching            | Works naturally with standard HTTP caching    | Often needs client or application-level caching|\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Error handling     | Uses HTTP status codes for request outcomes   | Often returns errors within a response body   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Key difference     | Server controls fixed resource responses      | Client controls the requested response shape  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Advantages         | Simple, mature, cache-friendly, and scalable  | Flexible, efficient, typed, and discoverable  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Disadvantages      | Can cause over-fetching and extra requests    | More complex caching and query-cost control   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Best use cases     | Public APIs, CRUD services, and simple systems| Complex UIs, mobile apps, and connected data  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Example            | GET /users/42/orders                          | query { user(id: 42) { orders { id } } }      |\n+--------------------+-----------------------------------------------+-----------------------------------------------+",
+			"fontSize": 46.07192998349474,
+			"fontFamily": 8,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"containerId": "qS2MqwiHycNItgKCgSRq-",
+			"originalText": "+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Feature            | REST                                          | GraphQL                                       |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Definition         | Architectural style for resource-based APIs   | Query language and runtime for APIs           |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Working            | Uses multiple endpoints for different resources| Uses one endpoint with client-defined queries |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Data fetching      | Server decides the response structure         | Client selects the exact fields it needs      |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Endpoints          | Usually exposes many resource-based endpoints | Usually exposes a single endpoint             |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Over-fetching      | May return more data than the client needs    | Reduces over-fetching with field selection    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Under-fetching     | May require multiple requests for related data| Can fetch related data in one request         |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Operations         | Commonly uses GET, POST, PUT, PATCH, DELETE   | Uses queries, mutations, and subscriptions    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Schema             | Schema is optional and often documented separately| Uses a strongly typed, discoverable schema |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Versioning         | Often uses URL or header-based API versions   | Usually evolves the schema without versions   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Caching            | Works naturally with standard HTTP caching    | Often needs client or application-level caching|\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Error handling     | Uses HTTP status codes for request outcomes   | Often returns errors within a response body   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Key difference     | Server controls fixed resource responses      | Client controls the requested response shape  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Advantages         | Simple, mature, cache-friendly, and scalable  | Flexible, efficient, typed, and discoverable  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Disadvantages      | Can cause over-fetching and extra requests    | More complex caching and query-cost control   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Best use cases     | Public APIs, CRUD services, and simple systems| Complex UIs, mobile apps, and connected data  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Example            | GET /users/42/orders                          | query { user(id: 42) { orders { id } } }      |\n+--------------------+-----------------------------------------------+-----------------------------------------------+",
+			"autoResize": true,
+			"lineHeight": 1.25,
+			"hasTextLink": false
+		},
+		{
+			"id": "I00JU9k9QFAHZllGmDGuK",
+			"type": "rectangle",
+			"x": -383.37574922633394,
+			"y": -1919.6192647592939,
+			"width": 744.3656207334493,
+			"height": 163.19938223175515,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"v4phywzxxFuWp-EEzeZT7"
+			],
+			"frameId": null,
+			"index": "aM",
+			"roundness": {
+				"type": 3
+			},
+			"seed": 1082496271,
+			"version": 1498,
+			"versionNonce": 1242863311,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"type": "text",
+					"id": "b434CFVY"
+				},
+				{
+					"id": "Ds7jLJYS",
+					"type": "arrow"
+				},
+				{
+					"id": "oOhTyAfF",
+					"type": "arrow"
+				}
+			],
+			"updated": 1785622054709,
+			"link": null,
+			"locked": false,
+			"hasTextLink": false
+		},
+		{
+			"id": "Ds7jLJYS",
+			"type": "arrow",
+			"x": 582.8655601744427,
+			"y": -1836.2043037710596,
+			"width": 214.87568866732738,
+			"height": 0.5481241793290792,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffec99",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "aN",
+			"roundness": {
+				"type": 2
+			},
+			"seed": 196163695,
+			"version": 684,
+			"versionNonce": 552234767,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785622054709,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-214.87568866732738,
+					-0.5481241793290792
+				]
+			],
+			"startBinding": {
+				"elementId": "OKkC0jS9",
+				"mode": "orbit",
+				"fixedPoint": [
+					0,
+					0.5001
+				]
+			},
+			"endBinding": {
+				"elementId": "I00JU9k9QFAHZllGmDGuK",
+				"mode": "orbit",
+				"fixedPoint": [
+					0.50185921313109,
+					0.5018592131310888
+				]
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"elbowed": false,
+			"moveMidPointsWithElement": false
+		},
+		{
+			"id": "b434CFVY",
+			"type": "text",
+			"x": -334.45142274632803,
+			"y": -1886.2400231289294,
+			"width": 646.5169677734375,
+			"height": 96.44089897102637,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"v4phywzxxFuWp-EEzeZT7"
+			],
+			"frameId": null,
+			"index": "aO",
+			"roundness": null,
+			"seed": 1213078319,
+			"version": 2021,
+			"versionNonce": 1410786543,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1785622054709,
+			"locked": false,
+			"text": "Rest vs GraphQL",
+			"rawText": "Rest vs GraphQL",
+			"fontSize": 77.1527191768211,
+			"fontFamily": 5,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"containerId": "I00JU9k9QFAHZllGmDGuK",
+			"originalText": "Rest vs GraphQL",
+			"autoResize": true,
+			"lineHeight": 1.25,
+			"hasTextLink": false
+		},
+		{
+			"id": "oOhTyAfF",
+			"type": "arrow",
+			"x": -373.0296796288952,
+			"y": -1844.950337572242,
+			"width": 280.4659681870977,
+			"height": 3.176238204543779,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffec99",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "aP",
+			"roundness": {
+				"type": 2
+			},
+			"seed": 443310945,
+			"version": 591,
+			"versionNonce": 1038415759,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785622058132,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-280.4659681870977,
+					3.176238204543779
+				]
+			],
+			"startBinding": {
+				"elementId": "I00JU9k9QFAHZllGmDGuK",
+				"mode": "inside",
+				"fixedPoint": [
+					0.013899177110361925,
+					0.45753192301314327
+				]
+			},
+			"endBinding": {
+				"elementId": "qS2MqwiHycNItgKCgSRq-",
+				"mode": "inside",
+				"fixedPoint": [
+					0.9980001530460555,
+					0.40825741890334516
+				]
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"elbowed": false,
+			"moveMidPointsWithElement": false
+		},
+		{
+			"id": "pxEUagecioW9Cm-xXQAUq",
+			"type": "rectangle",
+			"x": 4692.0899794197485,
+			"y": -2083.526870307476,
+			"width": 1167.3524704380802,
+			"height": 188.59858697009318,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"VtNd0ds-jBlU2iNzKVmRq"
+			],
+			"frameId": null,
+			"index": "aQ",
+			"roundness": {
+				"type": 3
+			},
+			"seed": 1284747137,
+			"version": 2005,
+			"versionNonce": 2131474863,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"type": "text",
+					"id": "XUR3xnud"
+				},
+				{
+					"id": "wTZRaoyE",
+					"type": "arrow"
+				},
+				{
+					"id": "8SH7idW5",
+					"type": "arrow"
+				}
+			],
+			"updated": 1785622038800,
+			"link": null,
+			"locked": false,
+			"hasTextLink": false
+		},
+		{
+			"id": "XUR3xnud",
+			"type": "text",
+			"x": 4762.126566201288,
+			"y": -2032.6676267456,
+			"width": 1027.279296875,
+			"height": 86.88009984634039,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"VtNd0ds-jBlU2iNzKVmRq"
+			],
+			"frameId": null,
+			"index": "aR",
+			"roundness": null,
+			"seed": 2018776929,
+			"version": 2706,
+			"versionNonce": 1743170511,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1785622038800,
+			"locked": false,
+			"text": "Load Balancer vs Api Gateway",
+			"rawText": "Load Balancer vs Api Gateway",
+			"fontSize": 69.50407987707231,
+			"fontFamily": 5,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"containerId": "pxEUagecioW9Cm-xXQAUq",
+			"originalText": "Load Balancer vs Api Gateway",
+			"autoResize": true,
+			"lineHeight": 1.25,
+			"hasTextLink": false
+		},
+		{
+			"id": "wTZRaoyE",
+			"type": "arrow",
+			"x": 4217.347880424398,
+			"y": -1807.038091616663,
+			"width": 453.88180840674704,
+			"height": 182.54137448753477,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffec99",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "aS",
+			"roundness": {
+				"type": 2
+			},
+			"seed": 185566433,
+			"version": 1012,
+			"versionNonce": 2027837935,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785622038800,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					453.88180840674704,
+					-182.54137448753477
+				]
+			],
+			"startBinding": {
+				"elementId": "OKkC0jS9",
+				"mode": "inside",
+				"fixedPoint": [
+					0.9932602252370099,
+					0.5864004802954973
+				]
+			},
+			"endBinding": {
+				"elementId": "pxEUagecioW9Cm-xXQAUq",
+				"mode": "orbit",
+				"fixedPoint": [
+					-0.017869744671697396,
+					0.4981341891929235
+				]
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"elbowed": false,
+			"moveMidPointsWithElement": false
+		},
+		{
+			"id": "XG4N8StMBTaJTv-5qyL_2",
+			"type": "rectangle",
+			"x": 6180.279765684401,
+			"y": -2897.271488298144,
+			"width": 2407.4565096059764,
+			"height": 1495,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#eebefa",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "aU",
+			"roundness": {
+				"type": 3
+			},
+			"seed": 212686497,
+			"version": 1765,
+			"versionNonce": 1934693423,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"type": "text",
+					"id": "1eh0pOWI"
+				},
+				{
+					"id": "8SH7idW5",
+					"type": "arrow"
+				}
+			],
+			"updated": 1785622036900,
+			"link": null,
+			"locked": false,
+			"hasTextLink": false
+		},
+		{
+			"id": "8SH7idW5",
+			"type": "arrow",
+			"x": 5842.100622466844,
+			"y": -2088.6505463608246,
+			"width": 331.1791432175578,
+			"height": 59.70941899342097,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffec99",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "aUG",
+			"roundness": {
+				"type": 2
+			},
+			"seed": 360060111,
+			"version": 989,
+			"versionNonce": 117130255,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785622038800,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					331.1791432175578,
+					-59.70941899342097
+				]
+			],
+			"startBinding": {
+				"elementId": "pxEUagecioW9Cm-xXQAUq",
+				"mode": "orbit",
+				"fixedPoint": [
+					0.6225596353381351,
+					0.37744036466186354
+				]
+			},
+			"endBinding": {
+				"elementId": "XG4N8StMBTaJTv-5qyL_2",
+				"mode": "orbit",
+				"fixedPoint": [
+					0,
+					0.5001
+				]
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"elbowed": false,
+			"moveMidPointsWithElement": false
+		},
+		{
+			"id": "1eh0pOWI",
+			"type": "text",
+			"x": 6196.008142557702,
+			"y": -2892.271488298144,
+			"width": 2375.999755859375,
+			"height": 1485,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#eebefa",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "aUV",
+			"roundness": null,
+			"seed": 1879759727,
+			"version": 410,
+			"versionNonce": 261928527,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785622036900,
+			"locked": false,
+			"text": "+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Feature            | Load Balancer                                 | API Gateway                                   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Definition         | Distributes traffic across multiple servers   | Manages and routes client requests to APIs    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Working            | Selects a healthy backend for each request    | Applies API rules before forwarding requests  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Primary purpose    | Improves availability and traffic distribution| Provides centralized API management           |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Routing basis      | Routes by IP, port, protocol, host, or path    | Routes by API path, method, header, or policy  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Authentication     | Usually relies on other services              | Commonly validates API keys, tokens, or OAuth  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Rate limiting      | Basic connection or request limits            | Supports client-level quotas and throttling   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Protocol support   | Handles TCP, UDP, HTTP, and HTTPS              | Mainly handles HTTP, HTTPS, and WebSocket APIs |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Health checks      | Checks backends and avoids unhealthy servers  | May use service health information for routing|\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Data transformation| Usually forwards requests without changes    | Can transform request and response formats    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Observability      | Tracks traffic, latency, and backend health   | Tracks API usage, errors, users, and quotas    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Key difference     | Balances traffic between service instances    | Controls access and behavior at the API layer  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Advantages         | High availability, scalability, and failover  | Security, routing, throttling, and monitoring  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Disadvantages      | Limited API-specific management features      | Adds complexity, cost, and processing latency  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Best use cases     | Scaling web servers and service replicas      | Managing microservices and public APIs         |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Example            | NGINX distributing requests across web servers| Kong routing authenticated requests to services|\n+--------------------+-----------------------------------------------+-----------------------------------------------+",
+			"rawText": "+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Feature            | Load Balancer                                 | API Gateway                                   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Definition         | Distributes traffic across multiple servers   | Manages and routes client requests to APIs    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Working            | Selects a healthy backend for each request    | Applies API rules before forwarding requests  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Primary purpose    | Improves availability and traffic distribution| Provides centralized API management           |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Routing basis      | Routes by IP, port, protocol, host, or path    | Routes by API path, method, header, or policy  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Authentication     | Usually relies on other services              | Commonly validates API keys, tokens, or OAuth  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Rate limiting      | Basic connection or request limits            | Supports client-level quotas and throttling   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Protocol support   | Handles TCP, UDP, HTTP, and HTTPS              | Mainly handles HTTP, HTTPS, and WebSocket APIs |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Health checks      | Checks backends and avoids unhealthy servers  | May use service health information for routing|\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Data transformation| Usually forwards requests without changes    | Can transform request and response formats    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Observability      | Tracks traffic, latency, and backend health   | Tracks API usage, errors, users, and quotas    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Key difference     | Balances traffic between service instances    | Controls access and behavior at the API layer  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Advantages         | High availability, scalability, and failover  | Security, routing, throttling, and monitoring  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Disadvantages      | Limited API-specific management features      | Adds complexity, cost, and processing latency  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Best use cases     | Scaling web servers and service replicas      | Managing microservices and public APIs         |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Example            | NGINX distributing requests across web servers| Kong routing authenticated requests to services|\n+--------------------+-----------------------------------------------+-----------------------------------------------+",
+			"fontSize": 36,
+			"fontFamily": 8,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"containerId": "XG4N8StMBTaJTv-5qyL_2",
+			"originalText": "+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Feature            | Load Balancer                                 | API Gateway                                   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Definition         | Distributes traffic across multiple servers   | Manages and routes client requests to APIs    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Working            | Selects a healthy backend for each request    | Applies API rules before forwarding requests  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Primary purpose    | Improves availability and traffic distribution| Provides centralized API management           |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Routing basis      | Routes by IP, port, protocol, host, or path    | Routes by API path, method, header, or policy  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Authentication     | Usually relies on other services              | Commonly validates API keys, tokens, or OAuth  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Rate limiting      | Basic connection or request limits            | Supports client-level quotas and throttling   |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Protocol support   | Handles TCP, UDP, HTTP, and HTTPS              | Mainly handles HTTP, HTTPS, and WebSocket APIs |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Health checks      | Checks backends and avoids unhealthy servers  | May use service health information for routing|\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Data transformation| Usually forwards requests without changes    | Can transform request and response formats    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Observability      | Tracks traffic, latency, and backend health   | Tracks API usage, errors, users, and quotas    |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Key difference     | Balances traffic between service instances    | Controls access and behavior at the API layer  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Advantages         | High availability, scalability, and failover  | Security, routing, throttling, and monitoring  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Disadvantages      | Limited API-specific management features      | Adds complexity, cost, and processing latency  |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Best use cases     | Scaling web servers and service replicas      | Managing microservices and public APIs         |\n+--------------------+-----------------------------------------------+-----------------------------------------------+\n| Example            | NGINX distributing requests across web servers| Kong routing authenticated requests to services|\n+--------------------+-----------------------------------------------+-----------------------------------------------+",
+			"autoResize": true,
+			"lineHeight": 1.25,
+			"hasTextLink": false
+		},
+		{
+			"id": "Urg5EaLCvm3o7BxFmTGGa",
+			"type": "rectangle",
+			"x": 1626.8338524758556,
+			"y": -2389.471866242004,
+			"width": 1167.3524704380802,
+			"height": 188.59858697009318,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"na4CwDhAbuHk2a79OA-nR"
+			],
+			"frameId": null,
+			"index": "aY",
+			"roundness": {
+				"type": 3
+			},
+			"seed": 1618272161,
+			"version": 2021,
+			"versionNonce": 531484239,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"type": "text",
+					"id": "DhkkNOwn"
+				},
+				{
+					"id": "ZQghD2mu",
+					"type": "arrow"
+				},
+				{
+					"id": "DOD2r2Dk",
+					"type": "arrow"
+				}
+			],
+			"updated": 1785622062109,
+			"link": null,
+			"locked": false,
+			"hasTextLink": false
+		},
+		{
+			"id": "ZQghD2mu",
+			"type": "arrow",
+			"x": 2337.4141940785216,
+			"y": -2037.143413210154,
+			"width": 13.692330874707295,
+			"height": 156.7298660617571,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#eebefa",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "aYV",
+			"roundness": {
+				"type": 2
+			},
+			"seed": 355925999,
+			"version": 267,
+			"versionNonce": 607897231,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785622062109,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					13.692330874707295,
+					-156.7298660617571
+				]
+			],
+			"startBinding": null,
+			"endBinding": {
+				"elementId": "Urg5EaLCvm3o7BxFmTGGa",
+				"mode": "orbit",
+				"fixedPoint": [
+					0.6262396988544822,
+					0.6262396988544827
+				]
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"elbowed": false,
+			"moveMidPointsWithElement": false
+		},
+		{
+			"id": "DhkkNOwn",
+			"type": "text",
+			"x": 1859.2571580073957,
+			"y": -2338.6126226801275,
+			"width": 702.505859375,
+			"height": 86.88009984634039,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"na4CwDhAbuHk2a79OA-nR"
+			],
+			"frameId": null,
+			"index": "aZ",
+			"roundness": null,
+			"seed": 886719361,
+			"version": 2747,
+			"versionNonce": 547171439,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1785622062109,
+			"locked": false,
+			"text": "Polling vs WebSocket",
+			"rawText": "Polling vs WebSocket",
+			"fontSize": 69.50407987707231,
+			"fontFamily": 5,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"containerId": "Urg5EaLCvm3o7BxFmTGGa",
+			"originalText": "Polling vs WebSocket",
+			"autoResize": true,
+			"lineHeight": 1.25,
+			"hasTextLink": false
+		},
+		{
+			"id": "PPWkVhyVEGH45PGsPA2V8",
+			"type": "rectangle",
+			"x": 853.9644466078273,
+			"y": -4240.211455370575,
+			"width": 2610.3798514935597,
+			"height": 1623.793377456552,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#eebefa",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "ab",
+			"roundness": {
+				"type": 3
+			},
+			"seed": 744063297,
+			"version": 2290,
+			"versionNonce": 64326415,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"id": "DOD2r2Dk",
+					"type": "arrow"
+				},
+				{
+					"type": "text",
+					"id": "sSb111i7"
+				}
+			],
+			"updated": 1785622063083,
+			"link": null,
+			"locked": false,
+			"hasTextLink": false
+		},
+		{
+			"id": "sSb111i7",
+			"type": "text",
+			"x": 882.0530539952322,
+			"y": -4215.814766642299,
+			"width": 2554.20263671875,
+			"height": 1575,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#eebefa",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "abG",
+			"roundness": null,
+			"seed": 1080160737,
+			"version": 634,
+			"versionNonce": 1244614959,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785622063083,
+			"locked": false,
+			"text": "+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Feature              | Polling                                            | WebSocket                                         |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Definition           | Client repeatedly asks the server for updates      | Persistent two-way client-server connection       |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Working              | Sends HTTP requests at fixed time intervals        | Keeps one connection open for live messages       |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Communication        | Client initiates every request                     | Client and server can send messages anytime       |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Connection           | Creates or reuses an HTTP connection per poll      | Maintains one long-lived connection               |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Direction            | Primarily request-response communication           | Full-duplex bidirectional communication           |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Latency              | Depends on the polling interval                    | Very low after the connection is established      |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Network overhead     | Repeated requests add headers and empty responses  | Low overhead after the initial handshake          |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Scalability          | Frequent polling can increase server load          | Many open connections require careful management  |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Missed updates       | Updates wait until the next polling request        | Updates can be pushed immediately                 |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Failure handling     | Each new request can recover independently         | Requires reconnect and connection-state logic     |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Infrastructure       | Works easily with HTTP servers and proxies         | Needs WebSocket-aware servers and proxies         |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Key difference       | Checks periodically whether new data exists        | Server pushes data as soon as it is available     |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Advantages           | Simple, stateless, compatible, and easy to cache   | Real-time, efficient, and bidirectional           |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Disadvantages        | Higher latency, wasted requests, and more traffic  | More complex connection and scaling management    |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Best use cases       | Infrequent updates and simple status checks        | Chat, gaming, live feeds, and collaboration       |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Example              | Checking job status every five seconds             | Receiving chat messages instantly                 |\n+----------------------+----------------------------------------------------+---------------------------------------------------+",
+			"rawText": "+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Feature              | Polling                                            | WebSocket                                         |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Definition           | Client repeatedly asks the server for updates      | Persistent two-way client-server connection       |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Working              | Sends HTTP requests at fixed time intervals        | Keeps one connection open for live messages       |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Communication        | Client initiates every request                     | Client and server can send messages anytime       |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Connection           | Creates or reuses an HTTP connection per poll      | Maintains one long-lived connection               |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Direction            | Primarily request-response communication           | Full-duplex bidirectional communication           |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Latency              | Depends on the polling interval                    | Very low after the connection is established      |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Network overhead     | Repeated requests add headers and empty responses  | Low overhead after the initial handshake          |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Scalability          | Frequent polling can increase server load          | Many open connections require careful management  |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Missed updates       | Updates wait until the next polling request        | Updates can be pushed immediately                 |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Failure handling     | Each new request can recover independently         | Requires reconnect and connection-state logic     |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Infrastructure       | Works easily with HTTP servers and proxies         | Needs WebSocket-aware servers and proxies         |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Key difference       | Checks periodically whether new data exists        | Server pushes data as soon as it is available     |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Advantages           | Simple, stateless, compatible, and easy to cache   | Real-time, efficient, and bidirectional           |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Disadvantages        | Higher latency, wasted requests, and more traffic  | More complex connection and scaling management    |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Best use cases       | Infrequent updates and simple status checks        | Chat, gaming, live feeds, and collaboration       |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Example              | Checking job status every five seconds             | Receiving chat messages instantly                 |\n+----------------------+----------------------------------------------------+---------------------------------------------------+",
+			"fontSize": 36,
+			"fontFamily": 8,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"containerId": "PPWkVhyVEGH45PGsPA2V8",
+			"originalText": "+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Feature              | Polling                                            | WebSocket                                         |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Definition           | Client repeatedly asks the server for updates      | Persistent two-way client-server connection       |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Working              | Sends HTTP requests at fixed time intervals        | Keeps one connection open for live messages       |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Communication        | Client initiates every request                     | Client and server can send messages anytime       |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Connection           | Creates or reuses an HTTP connection per poll      | Maintains one long-lived connection               |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Direction            | Primarily request-response communication           | Full-duplex bidirectional communication           |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Latency              | Depends on the polling interval                    | Very low after the connection is established      |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Network overhead     | Repeated requests add headers and empty responses  | Low overhead after the initial handshake          |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Scalability          | Frequent polling can increase server load          | Many open connections require careful management  |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Missed updates       | Updates wait until the next polling request        | Updates can be pushed immediately                 |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Failure handling     | Each new request can recover independently         | Requires reconnect and connection-state logic     |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Infrastructure       | Works easily with HTTP servers and proxies         | Needs WebSocket-aware servers and proxies         |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Key difference       | Checks periodically whether new data exists        | Server pushes data as soon as it is available     |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Advantages           | Simple, stateless, compatible, and easy to cache   | Real-time, efficient, and bidirectional           |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Disadvantages        | Higher latency, wasted requests, and more traffic  | More complex connection and scaling management    |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Best use cases       | Infrequent updates and simple status checks        | Chat, gaming, live feeds, and collaboration       |\n+----------------------+----------------------------------------------------+---------------------------------------------------+\n| Example              | Checking job status every five seconds             | Receiving chat messages instantly                 |\n+----------------------+----------------------------------------------------+---------------------------------------------------+",
+			"autoResize": true,
+			"lineHeight": 1.25,
+			"hasTextLink": false
+		},
+		{
+			"id": "DOD2r2Dk",
+			"type": "arrow",
+			"x": 2210.5760285624856,
+			"y": -2396.471866242004,
+			"width": 1.7377431099630485,
+			"height": 239.47928689110495,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#eebefa",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "abV",
+			"roundness": {
+				"type": 2
+			},
+			"seed": 836202305,
+			"version": 852,
+			"versionNonce": 1235964751,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1785622063083,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-1.7377431099630485,
+					-239.47928689110495
+				]
+			],
+			"startBinding": {
+				"elementId": "Urg5EaLCvm3o7BxFmTGGa",
+				"mode": "orbit",
+				"fixedPoint": [
+					0.5001,
+					0
+				]
+			},
+			"endBinding": {
+				"elementId": "PPWkVhyVEGH45PGsPA2V8",
+				"mode": "inside",
+				"fixedPoint": [
+					0.5190332119938362,
+					0.9879707138295625
+				]
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"elbowed": false,
+			"moveMidPointsWithElement": false
+		}
+	],
+	"appState": {
+		"theme": "light",
+		"viewBackgroundColor": "#ffffff",
+		"currentItemStrokeColor": "#1e1e1e",
+		"currentItemBackgroundColor": "#eebefa",
+		"currentItemFillStyle": "solid",
+		"currentItemStrokeWidth": 4,
+		"currentItemStrokeStyle": "solid",
+		"currentItemRoughness": 1,
+		"currentItemOpacity": 100,
+		"currentItemFontFamily": 8,
+		"currentItemFontSize": 36,
+		"currentItemTextAlign": "left",
+		"currentItemStartArrowhead": null,
+		"currentItemEndArrowhead": "arrow",
+		"currentItemArrowType": "round",
+		"currentItemFrameRole": null,
+		"scrollX": 4013.0138387511324,
+		"scrollY": 5160.581098993862,
+		"zoom": {
+			"value": 0.122378
+		},
+		"currentItemRoundness": "round",
+		"gridSize": 20,
+		"gridStep": 5,
+		"gridModeEnabled": false,
+		"gridColor": {
+			"Bold": "rgba(217, 217, 217, 0.5)",
+			"Regular": "rgba(230, 230, 230, 0.5)"
+		},
+		"currentStrokeOptions": null,
+		"frameRendering": {
+			"enabled": true,
+			"clip": true,
+			"name": true,
+			"outline": true,
+			"markerName": true,
+			"markerEnabled": true
+		},
+		"objectsSnapModeEnabled": false,
+		"activeTool": {
+			"type": "selection",
+			"customType": null,
+			"locked": false,
+			"fromSelection": false,
+			"lastActiveTool": null
+		},
+		"disableContextMenu": false,
+		"bindingPreference": "enabled",
+		"isBindingEnabled": true,
+		"isMidpointSnappingEnabled": true,
+		"boxSelectionMode": "contain"
+	},
+	"files": {}
+}

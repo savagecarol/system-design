@@ -49,4 +49,12 @@ export const blogMeta: Record<string, BlogMeta> = {
     companies: ['Twitter', 'Snowflake'],
     readTime: 4,
   },
+  'differences-in-system-desgin-interview-topics': {
+    title: 'Differences in System Design Interview Topics',
+    date: '2026-08-01',
+    description: 'Common "difference" questions asked in system design interviews — comparing patterns, protocols, and architectural choices side by side.',
+    tags: [],
+    companies: [],
+    readTime: 5,
+  },
 }
