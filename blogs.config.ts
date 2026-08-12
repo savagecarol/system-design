@@ -57,6 +57,14 @@ export const blogMeta: Record<string, BlogMeta> = {
     companies: ['Twitter'],
     readTime: 6,
   },
+  'daperture-twitter-load-balancer': {
+    title: 'Daperture — Twitter Load Balancer',
+    date: '2026-08-12',
+    description: 'How Twitter built Daperture (Deterministic Aperture) — an internal load-balancing algorithm combining deterministic server subsets with Power of Two Choices to distribute traffic at scale.',
+    tags: ['system-design'],
+    companies: ['Twitter'],
+    readTime: 5,
+  },
   'differences-in-system-desgin-interview-topics': {
     title: 'Differences in System Design Interview Topics',
     date: '2026-08-01',
