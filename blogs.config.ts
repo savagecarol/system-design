@@ -43,11 +43,19 @@ export const blogMeta: Record<string, BlogMeta> = {
   },
   'snow-flake': {
     title: 'Snowflake — Unique ID Generator',
-    date: '2026-07-24',
+    date: '2026-08-12',
     description: 'How Twitter\'s Snowflake generates unique, sortable 64-bit IDs at scale — breaking down the epoch, datacenter, machine, and sequence bits.',
     tags: ['system-design'],
-    companies: ['Twitter', 'Snowflake'],
+    companies: ['Twitter'],
     readTime: 4,
+  },
+  'manhattan-twitter-distributed-database': {
+    title: 'Manhattan — Twitter Distributed Database',
+    date: '2026-08-12',
+    description: 'How Twitter built Manhattan, its distributed storage system — sharding, replication, replica repair, and why existing databases did not meet Twitter\'s latency and operational requirements.',
+    tags: ['system-design'],
+    companies: ['Twitter'],
+    readTime: 6,
   },
   'differences-in-system-desgin-interview-topics': {
     title: 'Differences in System Design Interview Topics',
