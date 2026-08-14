@@ -68,8 +68,8 @@ export const chapterMeta: Record<string, ChapterMeta> = {
   },
   'scaling/load-balancer-for-hozintal-scaling': {
     difficulty: 'Intermediate',
-    readTime: 7,
-    description: 'How load balancers enable horizontal scaling strategies.',
+    readTime: 12,
+    description: 'Load balancers explained — L4 vs L7, OSI layers, pass-through vs proxy mode, algorithms (Round Robin, Weighted, Least Connection, Consistent Hashing), and TCP/TLS termination.',
   },
   'scaling/stateless-and-stateful-service': {
     difficulty: 'Intermediate',
