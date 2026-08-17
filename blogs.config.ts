@@ -65,6 +65,22 @@ export const blogMeta: Record<string, BlogMeta> = {
     companies: ['Twitter'],
     readTime: 5,
   },
+  'earlybird-twitter-seach-engine': {
+    title: 'Earlybird — Twitter Search Engine',
+    date: '2026-08-17',
+    description: 'How Twitter built Earlybird, its custom real-time distributed search engine — from MySQL LIKE queries to inverted indexes, Lucene, and a distributed Lucene index tuned for tweet search at scale.',
+    tags: ['system-design'],
+    companies: ['Twitter'],
+    readTime: 7,
+  },
+  'twitter-system-design': {
+    title: 'Twitter (X) System Design',
+    date: '2026-08-17',
+    description: 'End-to-end Twitter system design — functional and non-functional requirements, load balancer, API gateway, tweet/timeline/search services, Manhattan, CDN, cache, and rate limiting.',
+    tags: ['system-design'],
+    companies: ['Twitter'],
+    readTime: 8,
+  },
   'differences-in-system-desgin-interview-topics': {
     title: 'Differences in System Design Interview Topics',
     date: '2026-08-01',
