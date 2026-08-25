@@ -2,8 +2,10 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getAllCompanies, getCompanyBySlug, getCompanyPost, getCompanyPosts } from '@/lib/companies'
+import { getCompanyRelatedLinks } from '@/lib/related'
 import { Navbar } from '@/components/layout/Navbar'
 import { ExcalidrawViewer } from '@/components/chapter/ExcalidrawViewer'
+import { RelatedLinksBar } from '@/components/shared/RelatedLinksBar'
 
 interface PageProps {
   params: {
@@ -50,6 +52,8 @@ export default function CompanyPostPage({ params }: PageProps) {
   const post = getCompanyPost(params.company, params.slug)
   if (!company || !post) notFound()
 
+  const related = getCompanyRelatedLinks(params.company, params.slug)
+
   return (
     <div className="h-screen flex flex-col bg-canvas overflow-hidden">
       <Navbar currentPage={`/companies/${company.slug}/${post.slug}`} />
@@ -90,6 +94,8 @@ export default function CompanyPostPage({ params }: PageProps) {
             </>
           )}
         </div>
+
+        <RelatedLinksBar links={related} />
 
         <div className="flex-1 relative overflow-hidden bg-[#f8fafc]">
           <div className="absolute inset-0">

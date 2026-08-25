@@ -4,6 +4,8 @@ export interface CompanyMeta {
   brandColor: string
   logoMark: string
   tagline: string
+  featuredTopics: string[]
+  highlightSlugs: string[]
 }
 
 export const companiesMeta: Record<string, CompanyMeta> = {
@@ -14,5 +16,11 @@ export const companiesMeta: Record<string, CompanyMeta> = {
     brandColor: '#000000',
     logoMark: '𝕏',
     tagline: 'Engineering at scale',
+    featuredTopics: ['Timelines', 'Search', 'Storage', 'Load Balancing', 'ID Generation'],
+    highlightSlugs: [
+      'twitter-system-design',
+      'timelines-at-scale',
+      'manhattan-twitter-distributed-database',
+    ],
   },
 }

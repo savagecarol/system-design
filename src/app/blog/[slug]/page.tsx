@@ -2,9 +2,11 @@ import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getAllBlogPosts, getBlogPostBySlug } from '@/lib/blogs'
+import { getBlogRelatedLinks } from '@/lib/related'
 import { legacyRedirects } from '../../../../redirects.config.mjs'
 import { Navbar } from '@/components/layout/Navbar'
 import { ExcalidrawViewer } from '@/components/chapter/ExcalidrawViewer'
+import { RelatedLinksBar } from '@/components/shared/RelatedLinksBar'
 
 interface PageProps {
   params: {
@@ -37,6 +39,8 @@ export default function BlogPostPage({ params }: PageProps) {
 
   const post = getBlogPostBySlug(params.slug)
   if (!post) notFound()
+
+  const related = getBlogRelatedLinks(params.slug)
 
   return (
     <div className="h-screen flex flex-col bg-canvas overflow-hidden">
@@ -72,6 +76,8 @@ export default function BlogPostPage({ params }: PageProps) {
             </>
           )}
         </div>
+
+        <RelatedLinksBar links={related} />
 
         {/* Full-screen canvas */}
         <div className="flex-1 relative overflow-hidden bg-[#f8fafc]">

@@ -38,7 +38,7 @@ export function CompaniesContent({ companies }: CompaniesContentProps) {
             variants={staggerContainer}
             initial="hidden"
             animate="visible"
-            className="grid gap-5 sm:grid-cols-2"
+            className="grid gap-5"
           >
             {companies.map(company => (
               <CompanyCard key={company.slug} company={company} />
@@ -61,14 +61,17 @@ function CompanyCard({ company }: { company: Company }) {
     >
       <Link
         href={`/companies/${company.slug}`}
-        className="group block h-full overflow-hidden rounded-xl border border-gray-200 bg-white hover:border-brand-500/50 transition-colors duration-200"
+        className="group block overflow-hidden rounded-xl border border-gray-200 bg-white hover:shadow-md transition-all duration-200"
+        style={{ borderColor: undefined }}
       >
         <div
-          className="px-6 py-5 flex items-center gap-4"
-          style={{ backgroundColor: `${company.brandColor}08` }}
+          className="px-6 py-5 flex items-center gap-4 border-b border-gray-100"
+          style={{
+            background: `linear-gradient(135deg, ${company.brandColor}10 0%, ${company.brandColor}04 100%)`,
+          }}
         >
           <div
-            className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl font-bold shrink-0 shadow-sm"
+            className="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl font-bold shrink-0 shadow-md ring-4 ring-white"
             style={{
               backgroundColor: company.brandColor,
               color: '#ffffff',
@@ -77,23 +80,60 @@ function CompanyCard({ company }: { company: Company }) {
             {company.logoMark}
           </div>
           <div className="min-w-0 flex-1">
-            <div className="flex items-center gap-2 mb-1">
-              <h2 className="text-xl font-semibold text-gray-900 group-hover:text-brand-600 transition-colors truncate">
+            <div className="flex items-center gap-2 mb-1 flex-wrap">
+              <h2 className="text-2xl font-semibold text-gray-900 group-hover:text-brand-600 transition-colors">
                 {company.name}
               </h2>
-              <span className="shrink-0 px-2 py-0.5 rounded-full text-xs font-mono bg-white/80 text-gray-600 border border-gray-200">
-                {company.postCount} posts
+              <span
+                className="shrink-0 px-2.5 py-0.5 rounded-full text-xs font-mono border"
+                style={{
+                  backgroundColor: `${company.brandColor}12`,
+                  borderColor: `${company.brandColor}30`,
+                  color: company.brandColor,
+                }}
+              >
+                {company.postCount} case studies
               </span>
             </div>
             <p className="text-xs font-mono text-muted uppercase tracking-wide">{company.tagline}</p>
           </div>
         </div>
 
-        {company.description && (
-          <p className="px-6 py-4 text-sm text-muted line-clamp-3 border-t border-gray-100">
-            {company.description}
-          </p>
-        )}
+        <div className="px-6 py-4 space-y-4">
+          {company.description && (
+            <p className="text-sm text-muted">{company.description}</p>
+          )}
+
+          {company.featuredTopics.length > 0 && (
+            <div className="flex items-center gap-1.5 flex-wrap">
+              {company.featuredTopics.map(topic => (
+                <span
+                  key={topic}
+                  className="px-2 py-0.5 rounded-full text-xs font-mono bg-gray-100 text-gray-600 border border-gray-200"
+                >
+                  {topic}
+                </span>
+              ))}
+            </div>
+          )}
+
+          {company.highlightPosts.length > 0 && (
+            <div>
+              <p className="text-xs font-mono text-muted mb-2 uppercase tracking-wide">Featured</p>
+              <ul className="space-y-1.5">
+                {company.highlightPosts.map(post => (
+                  <li
+                    key={post.slug}
+                    className="text-sm text-gray-700 flex items-center gap-2 group-hover:text-gray-900"
+                  >
+                    <span className="w-1 h-1 rounded-full bg-brand-500 shrink-0" />
+                    <span className="line-clamp-1">{post.title}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
       </Link>
     </motion.div>
   )

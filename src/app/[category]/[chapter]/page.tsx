@@ -1,11 +1,13 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getChapterBySlug, getChaptersByCategory, getAllChapters } from '@/lib/content'
+import { getChapterRelatedLinks } from '@/lib/related'
 import { Navbar } from '@/components/layout/Navbar'
 import { Sidebar } from '@/components/layout/Sidebar'
 import { ExcalidrawViewer } from '@/components/chapter/ExcalidrawViewer'
 import { ChapterPageClient } from '@/components/chapter/ChapterPageClient'
 import { JsonLd } from '@/components/seo/JsonLd'
+import { RelatedLinksBar } from '@/components/shared/RelatedLinksBar'
 
 interface PageProps {
   params: {
@@ -48,6 +50,7 @@ export default function ChapterPage({ params }: PageProps) {
   if (!chapter) notFound()
 
   const categories = getChaptersByCategory()
+  const related = getChapterRelatedLinks(params.category, params.chapter)
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -87,10 +90,13 @@ export default function ChapterPage({ params }: PageProps) {
 
         <main className="flex-1 lg:ml-64 flex flex-col overflow-hidden">
           {/* Thin title bar — only text above the canvas */}
-          <div className="shrink-0 h-10 flex items-center gap-2 px-4 border-b border-gray-200 bg-white/90 backdrop-blur-sm">
-            <span className="text-xs font-mono text-muted">{chapter.category}</span>
-            <span className="text-gray-300 text-xs">/</span>
-            <h1 className="text-sm font-mono text-gray-900 truncate">{chapter.title}</h1>
+          <div className="shrink-0 flex flex-col border-b border-gray-200 bg-white/90 backdrop-blur-sm">
+            <div className="h-10 flex items-center gap-2 px-4">
+              <span className="text-xs font-mono text-muted">{chapter.category}</span>
+              <span className="text-gray-300 text-xs">/</span>
+              <h1 className="text-sm font-mono text-gray-900 truncate">{chapter.title}</h1>
+            </div>
+            <RelatedLinksBar links={related} />
           </div>
 
           {/* Canvas fills every remaining pixel — relative so Notes button anchors here */}

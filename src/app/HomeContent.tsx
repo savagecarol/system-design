@@ -142,8 +142,12 @@ function ExploreSection({
       variants={fadeInUp}
       initial="hidden"
       animate="visible"
-      className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4"
+      className="mt-10"
     >
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-sm font-mono text-muted uppercase tracking-wider">Explore</h2>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
       {cards.map(card => (
         <motion.div
           key={card.href}
@@ -166,6 +170,7 @@ function ExploreSection({
           </Link>
         </motion.div>
       ))}
+      </div>
     </motion.section>
   )
 }

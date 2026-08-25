@@ -3,6 +3,11 @@ import path from 'path'
 import { companiesMeta } from '../../companies.config'
 import { companyPostMeta, defaultCompanyPostMeta } from '../../company-posts.config'
 
+export interface CompanyHighlightPost {
+  slug: string
+  title: string
+}
+
 export interface Company {
   slug: string
   name: string
@@ -11,6 +16,8 @@ export interface Company {
   brandColor: string
   logoMark: string
   tagline: string
+  featuredTopics: string[]
+  highlightPosts: CompanyHighlightPost[]
 }
 
 export interface CompanyPost {
@@ -51,6 +58,12 @@ export function getAllCompanies(): Company[] {
       const slug = d.name
       const meta = companiesMeta[slug]
       const posts = getCompanyPosts(slug)
+      const highlightSlugs = meta?.highlightSlugs ?? []
+      const highlightPosts = highlightSlugs
+        .map(postSlug => posts.find(p => p.slug === postSlug))
+        .filter((p): p is CompanyPost => Boolean(p))
+        .map(p => ({ slug: p.slug, title: p.title }))
+
       return {
         slug,
         name: meta?.name ?? toTitle(slug),
@@ -59,6 +72,8 @@ export function getAllCompanies(): Company[] {
         brandColor: meta?.brandColor ?? '#3b82f6',
         logoMark: meta?.logoMark ?? meta?.name?.charAt(0) ?? slug.charAt(0).toUpperCase(),
         tagline: meta?.tagline ?? 'System design case studies',
+        featuredTopics: meta?.featuredTopics ?? [],
+        highlightPosts,
       }
     })
     .sort((a, b) => a.name.localeCompare(b.name))
