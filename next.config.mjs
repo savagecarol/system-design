@@ -1,8 +1,12 @@
+import { legacyRedirects } from './redirects.config.mjs'
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // Allow Excalidraw to work in Next.js
   transpilePackages: ['@excalidraw/excalidraw', 'fuse.js'],
+  async redirects() {
+    return [...legacyRedirects]
+  },
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback = {

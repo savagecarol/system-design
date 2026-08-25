@@ -53,13 +53,19 @@ export function Navbar({ currentPage = '/', showMenuButton = false }: NavbarProp
           </Link>
         </div>
 
-        {/* Center — Blog + YouTube */}
+        {/* Center — Blog + Companies + YouTube */}
         <div className="flex items-center justify-center gap-1">
           <Link
             href="/blog"
             className="px-3 py-1.5 rounded-lg text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors"
           >
             Blog
+          </Link>
+          <Link
+            href="/companies"
+            className="px-3 py-1.5 rounded-lg text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors"
+          >
+            Companies
           </Link>
           <a
             href="https://youtube.com/@savagecarol"
