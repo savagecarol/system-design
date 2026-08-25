@@ -8,6 +8,9 @@ export interface Company {
   name: string
   description: string
   postCount: number
+  brandColor: string
+  logoMark: string
+  tagline: string
 }
 
 export interface CompanyPost {
@@ -53,6 +56,9 @@ export function getAllCompanies(): Company[] {
         name: meta?.name ?? toTitle(slug),
         description: meta?.description ?? '',
         postCount: posts.length,
+        brandColor: meta?.brandColor ?? '#3b82f6',
+        logoMark: meta?.logoMark ?? meta?.name?.charAt(0) ?? slug.charAt(0).toUpperCase(),
+        tagline: meta?.tagline ?? 'System design case studies',
       }
     })
     .sort((a, b) => a.name.localeCompare(b.name))

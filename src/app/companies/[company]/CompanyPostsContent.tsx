@@ -55,10 +55,21 @@ export function CompanyPostsContent({ company, posts }: CompanyPostsContentProps
             Companies
           </Link>
 
-          <h1 className="text-4xl font-bold text-gray-900 mb-2 tracking-tight">{company.name}</h1>
-          {company.description && (
-            <p className="text-muted text-base mb-6">{company.description}</p>
-          )}
+          <div className="flex items-start gap-4 mb-6">
+            <div
+              className="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl font-bold shrink-0 shadow-sm"
+              style={{ backgroundColor: company.brandColor, color: '#ffffff' }}
+            >
+              {company.logoMark}
+            </div>
+            <div>
+              <h1 className="text-4xl font-bold text-gray-900 mb-1 tracking-tight">{company.name}</h1>
+              <p className="text-xs font-mono text-muted uppercase tracking-wide mb-2">{company.tagline}</p>
+              {company.description && (
+                <p className="text-muted text-base">{company.description}</p>
+              )}
+            </div>
+          </div>
 
           <div className="relative">
             <svg

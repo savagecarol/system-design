@@ -81,6 +81,31 @@ export const chapterMeta: Record<string, ChapterMeta> = {
     readTime: 7,
     description: 'Auto scaling policies and strategies for dynamic workloads.',
   },
+  'networking-and-edge/proxies': {
+    difficulty: 'Beginner',
+    readTime: 6,
+    description: 'Forward vs reverse proxies — what they are, why they exist, and common examples like Nginx, HAProxy, and Cloudflare.',
+  },
+  'networking-and-edge/load-balancer': {
+    difficulty: 'Intermediate',
+    readTime: 12,
+    description: 'Load balancers explained — L4 vs L7, OSI layers, pass-through vs proxy mode, algorithms, and TCP/TLS termination.',
+  },
+  'networking-and-edge/cdn': {
+    difficulty: 'Intermediate',
+    readTime: 8,
+    description: 'How CDNs work — edge caching, static asset delivery, cache invalidation, and when to use a CDN vs origin storage.',
+  },
+  'networking-and-edge/api-gateway': {
+    difficulty: 'Intermediate',
+    readTime: 10,
+    description: 'API Gateway responsibilities — TLS termination, routing, auth, rate limiting, and centralized API management.',
+  },
+  'networking-and-edge/where-to-use-what': {
+    difficulty: 'Intermediate',
+    readTime: 9,
+    description: 'CDN vs Load Balancer vs API Gateway vs Proxy — when you need each, with real architecture scenarios from static sites to microservices.',
+  },
   'architecture-patterns/system-architecture': {
     difficulty: 'Intermediate',
     readTime: 8,

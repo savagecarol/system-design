@@ -26,12 +26,21 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const post = getCompanyPost(params.company, params.slug)
   if (!post) return {}
 
+  const ogImage = `/companies/${params.company}/${params.slug}/og-image`
+
   return {
     title: post.title,
     description: post.description || `Read ${post.title} on DesigningSystems.dev`,
     openGraph: {
       title: post.title,
       description: post.description || `Read ${post.title} on DesigningSystems.dev`,
+      images: [{ url: ogImage, width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.description || `Read ${post.title} on DesigningSystems.dev`,
+      images: [ogImage],
     },
   }
 }

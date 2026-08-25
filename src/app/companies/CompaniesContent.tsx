@@ -38,32 +38,10 @@ export function CompaniesContent({ companies }: CompaniesContentProps) {
             variants={staggerContainer}
             initial="hidden"
             animate="visible"
-            className="grid gap-4 sm:grid-cols-2"
+            className="grid gap-5 sm:grid-cols-2"
           >
             {companies.map(company => (
-              <motion.div
-                key={company.slug}
-                variants={fadeInUp}
-                whileHover={{ y: -2 }}
-                transition={{ type: 'spring', stiffness: 400, damping: 25 }}
-              >
-                <Link
-                  href={`/companies/${company.slug}`}
-                  className="group block h-full p-6 rounded-xl border border-gray-200 bg-white hover:bg-gray-50 hover:border-brand-500/50 transition-colors duration-200"
-                >
-                  <div className="flex items-start justify-between gap-4 mb-3">
-                    <h2 className="text-xl font-semibold text-gray-900 group-hover:text-brand-600 transition-colors">
-                      {company.name}
-                    </h2>
-                    <span className="shrink-0 px-2.5 py-1 rounded-full text-xs font-mono bg-red-50 text-red-600 border border-red-400">
-                      {company.postCount} {company.postCount === 1 ? 'post' : 'posts'}
-                    </span>
-                  </div>
-                  {company.description && (
-                    <p className="text-sm text-muted line-clamp-3">{company.description}</p>
-                  )}
-                </Link>
-              </motion.div>
+              <CompanyCard key={company.slug} company={company} />
             ))}
           </motion.div>
         )}
@@ -71,5 +49,52 @@ export function CompaniesContent({ companies }: CompaniesContentProps) {
 
       <Footer />
     </div>
+  )
+}
+
+function CompanyCard({ company }: { company: Company }) {
+  return (
+    <motion.div
+      variants={fadeInUp}
+      whileHover={{ y: -3 }}
+      transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+    >
+      <Link
+        href={`/companies/${company.slug}`}
+        className="group block h-full overflow-hidden rounded-xl border border-gray-200 bg-white hover:border-brand-500/50 transition-colors duration-200"
+      >
+        <div
+          className="px-6 py-5 flex items-center gap-4"
+          style={{ backgroundColor: `${company.brandColor}08` }}
+        >
+          <div
+            className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl font-bold shrink-0 shadow-sm"
+            style={{
+              backgroundColor: company.brandColor,
+              color: '#ffffff',
+            }}
+          >
+            {company.logoMark}
+          </div>
+          <div className="min-w-0 flex-1">
+            <div className="flex items-center gap-2 mb-1">
+              <h2 className="text-xl font-semibold text-gray-900 group-hover:text-brand-600 transition-colors truncate">
+                {company.name}
+              </h2>
+              <span className="shrink-0 px-2 py-0.5 rounded-full text-xs font-mono bg-white/80 text-gray-600 border border-gray-200">
+                {company.postCount} posts
+              </span>
+            </div>
+            <p className="text-xs font-mono text-muted uppercase tracking-wide">{company.tagline}</p>
+          </div>
+        </div>
+
+        {company.description && (
+          <p className="px-6 py-4 text-sm text-muted line-clamp-3 border-t border-gray-100">
+            {company.description}
+          </p>
+        )}
+      </Link>
+    </motion.div>
   )
 }

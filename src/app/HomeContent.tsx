@@ -15,9 +15,18 @@ type Categories = ReturnType<typeof getChaptersByCategory>
 interface HomeContentProps {
   categories: Categories
   totalChapters: number
+  blogCount: number
+  companyCount: number
+  companyPostCount: number
 }
 
-export function HomeContent({ categories, totalChapters }: HomeContentProps) {
+export function HomeContent({
+  categories,
+  totalChapters,
+  blogCount,
+  companyCount,
+  companyPostCount,
+}: HomeContentProps) {
   const [query, setQuery] = useState('')
 
   const allChapters = useMemo(
@@ -47,6 +56,15 @@ export function HomeContent({ categories, totalChapters }: HomeContentProps) {
       <main className="max-w-5xl mx-auto px-4 pt-24 pb-16">
         <HeroSection totalChapters={totalChapters} query={query} onSearch={setQuery} />
 
+        {!searchResults && (
+          <ExploreSection
+            totalChapters={totalChapters}
+            blogCount={blogCount}
+            companyCount={companyCount}
+            companyPostCount={companyPostCount}
+          />
+        )}
+
         {searchResults ? (
           <SearchResults results={searchResults} query={query} />
         ) : (
@@ -55,6 +73,7 @@ export function HomeContent({ categories, totalChapters }: HomeContentProps) {
             initial="hidden"
             animate="visible"
             className="mt-16 space-y-12"
+            id="chapters"
           >
             {categories.map((cat) => (
               <CategoryGroup key={cat.categorySlug} category={cat} />
@@ -65,6 +84,89 @@ export function HomeContent({ categories, totalChapters }: HomeContentProps) {
 
       <Footer />
     </div>
+  )
+}
+
+function ExploreSection({
+  totalChapters,
+  blogCount,
+  companyCount,
+  companyPostCount,
+}: {
+  totalChapters: number
+  blogCount: number
+  companyCount: number
+  companyPostCount: number
+}) {
+  const cards = [
+    {
+      href: '#chapters',
+      title: 'Learn Chapters',
+      description: 'Interactive Excalidraw diagrams covering scaling, databases, networking, and more.',
+      stat: `${totalChapters} chapters`,
+      accent: 'bg-brand-500/10 text-brand-600 border-brand-500/20',
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        </svg>
+      ),
+    },
+    {
+      href: '/companies',
+      title: 'Company Case Studies',
+      description: 'How real companies like Twitter built timelines, search, storage, and load balancing at scale.',
+      stat: `${companyPostCount} posts · ${companyCount} ${companyCount === 1 ? 'company' : 'companies'}`,
+      accent: 'bg-red-50 text-red-600 border-red-200',
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+        </svg>
+      ),
+    },
+    {
+      href: '/blog',
+      title: 'Blog',
+      description: 'Standalone deep-dives — Bloom filters, messaging patterns, and interview topic comparisons.',
+      stat: `${blogCount} posts`,
+      accent: 'bg-violet-50 text-violet-600 border-violet-200',
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+        </svg>
+      ),
+    },
+  ]
+
+  return (
+    <motion.section
+      variants={fadeInUp}
+      initial="hidden"
+      animate="visible"
+      className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4"
+    >
+      {cards.map(card => (
+        <motion.div
+          key={card.href}
+          whileHover={{ y: -4, scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+        >
+          <Link
+            href={card.href}
+            className="group block h-full p-5 rounded-xl border border-gray-200 bg-white hover:bg-gray-50 hover:border-brand-500/50 transition-colors duration-200"
+          >
+            <div className={`inline-flex p-2.5 rounded-lg border mb-4 ${card.accent}`}>
+              {card.icon}
+            </div>
+            <h2 className="text-lg font-semibold text-gray-900 group-hover:text-brand-600 transition-colors mb-2">
+              {card.title}
+            </h2>
+            <p className="text-sm text-muted line-clamp-3 mb-4">{card.description}</p>
+            <span className="text-xs font-mono text-muted">{card.stat}</span>
+          </Link>
+        </motion.div>
+      ))}
+    </motion.section>
   )
 }
 
