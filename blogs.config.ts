@@ -39,4 +39,12 @@ export const blogMeta: Record<string, BlogMeta> = {
     tags: [],
     readTime: 5,
   },
+  'presigned-url-and-multi-part-upload': {
+    title: 'Presigned URL and Multi-Part Upload',
+    date: '2026-08-25',
+    description:
+      'How to upload large files (like a 2GB video) without sending them through your backend twice — pre-signed URLs offload the transfer to S3, and multi-part upload retries only failed chunks.',
+    tags: ['system-design'],
+    readTime: 2,
+  },
 }
