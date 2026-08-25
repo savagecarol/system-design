@@ -7,7 +7,6 @@
     "predev": "tsx scripts/copy-diagrams.ts",
     "build": "next build",
     "prebuild": "tsx scripts/copy-diagrams.ts",
-    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },

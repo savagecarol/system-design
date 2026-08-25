@@ -1,4 +1,5 @@
 export interface ChapterMeta {
+  title?: string
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced'
   readTime: number
   description: string
@@ -12,6 +13,7 @@ export const defaultMeta: ChapterMeta = {
 
 export const chapterMeta: Record<string, ChapterMeta> = {
   'system-design/introduction': {
+    title: 'What Is System Design?',
     difficulty: 'Beginner',
     readTime: 5,
     description: 'What is system design and how it is used in interviews.',
@@ -42,16 +44,19 @@ export const chapterMeta: Record<string, ChapterMeta> = {
     description: 'Worked examples of capacity calculations for real systems.',
   },
   'capacity-estimation/infra': {
+    title: 'Infrastructure from Capacity Estimates',
     difficulty: 'Intermediate',
     readTime: 7,
     description: 'Infrastructure planning based on capacity estimates.',
   },
   'capacity-estimation/calculationinfra': {
+    title: 'Capacity Calculations and Infrastructure',
     difficulty: 'Intermediate',
     readTime: 9,
     description: 'Combined walkthrough of calculations and infrastructure.',
   },
   'scaling/introduction': {
+    title: 'Introduction to Scaling',
     difficulty: 'Beginner',
     readTime: 5,
     description: 'Introduction to scaling concepts in distributed systems.',
@@ -66,7 +71,8 @@ export const chapterMeta: Record<string, ChapterMeta> = {
     readTime: 6,
     description: 'Horizontal scaling: distributing load across multiple machines.',
   },
-  'scaling/load-balancer-for-hozintal-scaling': {
+  'scaling/load-balancer-for-horizontal-scaling': {
+    title: 'Load Balancing for Horizontal Scaling',
     difficulty: 'Intermediate',
     readTime: 12,
     description: 'Load balancers explained — L4 vs L7, OSI layers, pass-through vs proxy mode, algorithms (Round Robin, Weighted, Least Connection, Consistent Hashing), and TCP/TLS termination.',
@@ -132,6 +138,7 @@ export const chapterMeta: Record<string, ChapterMeta> = {
     description: 'Decision framework for choosing the right architecture pattern.',
   },
   'time-and-clocks/definition': {
+    title: 'Time in Distributed Systems',
     difficulty: 'Advanced',
     readTime: 6,
     description: 'Time in distributed systems: challenges and concepts.',
@@ -147,6 +154,7 @@ export const chapterMeta: Record<string, ChapterMeta> = {
     description: 'Logical clocks: Lamport timestamps and vector clocks.',
   },
   'time-and-clocks/summary': {
+    title: 'Time and Clocks Summary',
     difficulty: 'Advanced',
     readTime: 5,
     description: 'Summary and comparison of time synchronization approaches.',
@@ -161,7 +169,8 @@ export const chapterMeta: Record<string, ChapterMeta> = {
     readTime: 7,
     description: 'PACELC theorem extending CAP with latency trade-offs.',
   },
-  'theorems/consensus--fault-tolerance': {
+  'theorems/consensus-fault-tolerance': {
+    title: 'Consensus and Fault Tolerance',
     difficulty: 'Advanced',
     readTime: 9,
     description: 'Consensus algorithms and Byzantine fault tolerance.',
@@ -216,19 +225,57 @@ export const chapterMeta: Record<string, ChapterMeta> = {
     readTime: 7,
     description: 'Relational databases: structure, use cases, and trade-offs.',
   },
-  'database-discussion/non-relarional-database': {
-    difficulty: 'Intermediate',
-    readTime: 7,
-    description: 'NoSQL databases: types, use cases, and when to use them.',
-  },
   'database-discussion/databases-tree': {
     difficulty: 'Intermediate',
     readTime: 6,
     description: 'Visual taxonomy of database types and their relationships.',
   },
   'database-internals-and-indexing/all-concept': {
+    title: 'Database Internals and Indexing',
     difficulty: 'Advanced',
     readTime: 12,
     description: 'Deep dive into database internals, storage engines, and indexing strategies.',
+  },
+  'database-replication/introduction': {
+    title: 'Introduction to Database Replication',
+    difficulty: 'Intermediate',
+    readTime: 6,
+    description: 'Why databases replicate data, and the reliability and latency trade-offs of copying writes across nodes.',
+  },
+  'database-replication/type-1-leader-follower': {
+    title: 'Leader-Follower Replication',
+    difficulty: 'Intermediate',
+    readTime: 8,
+    description: 'Single-leader replication: how followers catch up, failover, and read-after-write issues.',
+  },
+  'database-replication/type-2-multi-leader': {
+    title: 'Multi-Leader Replication',
+    difficulty: 'Advanced',
+    readTime: 8,
+    description: 'Multi-leader setups for multi-datacenter writes, and the conflict patterns they introduce.',
+  },
+  'database-replication/type-3-leaderless-replication': {
+    title: 'Leaderless Replication',
+    difficulty: 'Advanced',
+    readTime: 8,
+    description: 'Leaderless replication with quorums, hinted handoff, and read repair.',
+  },
+  'database-replication/commit-types-sync-async-and-semi-sync': {
+    title: 'Sync, Async, and Semi-Sync Commits',
+    difficulty: 'Intermediate',
+    readTime: 7,
+    description: 'Synchronous, asynchronous, and semi-synchronous commit — durability versus write latency.',
+  },
+  'database-replication/leader-election-algorithm': {
+    title: 'Leader Election in Replication',
+    difficulty: 'Advanced',
+    readTime: 8,
+    description: 'How replica sets elect a new leader after failure, and what happens to in-flight writes.',
+  },
+  'database-replication/conflicts-and-conflict-resolution-in-multi-leader-replication': {
+    title: 'Conflict Resolution in Multi-Leader Replication',
+    difficulty: 'Advanced',
+    readTime: 8,
+    description: 'Detecting and resolving write conflicts in multi-leader replication, including last-write-wins and merge strategies.',
   },
 }

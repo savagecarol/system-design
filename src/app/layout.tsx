@@ -1,4 +1,7 @@
 import type { Metadata } from 'next'
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site'
+import { JsonLd } from '@/components/seo/JsonLd'
+import { organizationJsonLd, websiteJsonLd } from '@/lib/seo'
 import { Inter, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import '@excalidraw/excalidraw/index.css'
@@ -17,32 +20,38 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: 'DesigningSystems.dev — Learn System Design',
-    template: '%s | DesigningSystems.dev',
+    default: `${SITE_NAME} — Learn System Design`,
+    template: `%s | ${SITE_NAME}`,
   },
-  description:
-    'Master system design concepts through interactive Excalidraw diagrams. Topics include scaling, databases, architecture patterns, and more.',
-  metadataBase: new URL(process.env.SITE_URL ?? 'https://designingsystems.dev'),
+  description: SITE_DESCRIPTION,
+  metadataBase: new URL(SITE_URL),
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   openGraph: {
     type: 'website',
-    siteName: 'DesigningSystems.dev',
-    title: 'DesigningSystems.dev — Learn System Design',
-    description:
-      'Master system design concepts through interactive Excalidraw diagrams. Topics include scaling, databases, architecture patterns, and more.',
+    siteName: SITE_NAME,
+    title: `${SITE_NAME} — Learn System Design`,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
     images: [
       {
         url: '/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'DesigningSystems.dev — Learn System Design',
+        alt: `${SITE_NAME} — Learn System Design`,
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DesigningSystems.dev — Learn System Design',
-    description:
-      'Master system design concepts through interactive Excalidraw diagrams. Topics include scaling, databases, architecture patterns, and more.',
+    title: `${SITE_NAME} — Learn System Design`,
+    description: SITE_DESCRIPTION,
     images: ['/opengraph-image'],
   },
 }
@@ -55,6 +64,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${jetbrainsMono.variable} antialiased bg-canvas text-gray-900`}>
+        <JsonLd
+          data={{
+            '@context': 'https://schema.org',
+            '@graph': [organizationJsonLd(), websiteJsonLd()],
+          }}
+        />
         <ToastProvider>
           <AuthProvider>
             {children}

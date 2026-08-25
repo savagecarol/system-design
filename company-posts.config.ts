@@ -23,7 +23,7 @@ export const companyPostMeta: Record<string, CompanyPostMeta> = {
     tags: ['system-design'],
     readTime: 5,
   },
-  'snow-flake': {
+  'snowflake': {
     title: 'Snowflake — Unique ID Generator',
     date: '2026-08-12',
     description:
@@ -47,7 +47,7 @@ export const companyPostMeta: Record<string, CompanyPostMeta> = {
     tags: ['system-design'],
     readTime: 5,
   },
-  'earlybird-twitter-seach-engine': {
+  'earlybird-twitter-search-engine': {
     title: 'Earlybird — Twitter Search Engine',
     date: '2026-08-17',
     description:

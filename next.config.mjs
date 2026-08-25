@@ -1,11 +1,11 @@
-import { legacyRedirects } from './redirects.config.mjs'
+import { legacyRedirects, seoRedirects } from './redirects.config.mjs'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   transpilePackages: ['@excalidraw/excalidraw', 'fuse.js'],
   async redirects() {
-    return [...legacyRedirects]
+    return [...legacyRedirects, ...seoRedirects]
   },
   webpack: (config, { isServer }) => {
     if (!isServer) {

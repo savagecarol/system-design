@@ -92,9 +92,12 @@ export function Sidebar({ categories, activeFullSlug }: SidebarProps) {
           {categories.map(cat => (
             <div key={cat.categorySlug} className="mb-4">
               <div className="px-4 py-1">
-                <span className="text-xs font-semibold uppercase tracking-wider text-muted font-mono">
+                <Link
+                  href={`/${cat.categorySlug}`}
+                  className="text-xs font-semibold uppercase tracking-wider text-muted font-mono hover:text-brand-600"
+                >
                   {cat.category}
-                </span>
+                </Link>
               </div>
               {cat.chapters.map(chapter => {
                 const isActive = chapter.fullSlug === activeFullSlug

@@ -7,7 +7,9 @@ import { Sidebar } from '@/components/layout/Sidebar'
 import { ExcalidrawViewer } from '@/components/chapter/ExcalidrawViewer'
 import { ChapterPageClient } from '@/components/chapter/ChapterPageClient'
 import { JsonLd } from '@/components/seo/JsonLd'
+import { LessonOutline } from '@/components/seo/LessonOutline'
 import { RelatedLinksBar } from '@/components/shared/RelatedLinksBar'
+import { articleJsonLd, breadcrumbJsonLd, pageMetadata } from '@/lib/seo'
 
 interface PageProps {
   params: {
@@ -28,21 +30,21 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const chapter = getChapterBySlug(params.category, params.chapter)
   if (!chapter) return {}
 
-  return {
-    title: chapter.title,
-    description: chapter.description || `Learn ${chapter.title} in system design.`,
-    openGraph: {
-      title: chapter.title,
-      description: chapter.description || `Learn ${chapter.title} in system design.`,
-      images: [
-        {
-          url: `/${chapter.categorySlug}/${chapter.slug}/og-image`,
-          width: 1200,
-          height: 630,
-        },
-      ],
-    },
-  }
+  const title = `${chapter.title} — ${chapter.category}`
+  const description =
+    chapter.description ||
+    `Learn ${chapter.title} in the ${chapter.category} system design series on DesigningSystems.dev.`
+  const path = `/${chapter.categorySlug}/${chapter.slug}`
+  const ogImage = `${path}/og-image`
+
+  return pageMetadata({
+    title,
+    description,
+    path,
+    ogImage,
+    ogImageAlt: `${chapter.title} — ${chapter.category} system design`,
+    type: 'article',
+  })
 }
 
 export default function ChapterPage({ params }: PageProps) {
@@ -51,37 +53,33 @@ export default function ChapterPage({ params }: PageProps) {
 
   const categories = getChaptersByCategory()
   const related = getChapterRelatedLinks(params.category, params.chapter)
+  const path = `/${chapter.categorySlug}/${chapter.slug}`
+  const description =
+    chapter.description ||
+    `Learn ${chapter.title} in the ${chapter.category} system design series.`
 
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      {
-        '@type': 'Article',
+      articleJsonLd({
         headline: chapter.title,
-        description: chapter.description,
-        publisher: {
-          '@type': 'Organization',
-          name: 'DesigningSystems.dev',
-          url: 'https://designingsystems.dev',
-        },
-      },
-      {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://designingsystems.dev' },
-          { '@type': 'ListItem', position: 2, name: chapter.category, item: `https://designingsystems.dev/${chapter.categorySlug}` },
-          { '@type': 'ListItem', position: 3, name: chapter.title },
-        ],
-      },
+        description,
+        path,
+        image: `${path}/og-image`,
+      }),
+      breadcrumbJsonLd([
+        { name: 'Home', path: '/' },
+        { name: chapter.category, path: `/${chapter.categorySlug}` },
+        { name: chapter.title, path },
+      ]),
     ],
   }
 
   return (
     <div className="h-screen flex flex-col bg-canvas overflow-hidden">
       <JsonLd data={jsonLd} />
-      <Navbar currentPage={`/${chapter.categorySlug}/${chapter.slug}`} showMenuButton />
+      <Navbar currentPage={path} showMenuButton />
 
-      {/* Content area below fixed navbar, explicit height so flex-1 has a reference */}
       <div
         className="flex overflow-hidden"
         style={{ height: 'calc(100vh - 3.5rem)', marginTop: '3.5rem' }}
@@ -89,7 +87,6 @@ export default function ChapterPage({ params }: PageProps) {
         <Sidebar categories={categories} activeFullSlug={chapter.fullSlug} />
 
         <main className="flex-1 lg:ml-64 flex flex-col overflow-hidden">
-          {/* Thin title bar — only text above the canvas */}
           <div className="shrink-0 flex flex-col border-b border-gray-200 bg-white/90 backdrop-blur-sm">
             <div className="h-10 flex items-center gap-2 px-4">
               <span className="text-xs font-mono text-muted">{chapter.category}</span>
@@ -97,9 +94,13 @@ export default function ChapterPage({ params }: PageProps) {
               <h1 className="text-sm font-mono text-gray-900 truncate">{chapter.title}</h1>
             </div>
             <RelatedLinksBar links={related} />
+            <LessonOutline
+              title={chapter.title}
+              description={description}
+              diagramPath={chapter.diagramPath}
+            />
           </div>
 
-          {/* Canvas fills every remaining pixel — relative so Notes button anchors here */}
           <div className="flex-1 relative overflow-hidden bg-[#f8fafc]">
             <div className="absolute inset-0">
               <ExcalidrawViewer diagramPath={chapter.diagramPath} title={chapter.title} />

@@ -5,3 +5,4 @@ export type LegacyRedirect = {
 }
 
 export declare const legacyRedirects: LegacyRedirect[]
+export declare const seoRedirects: LegacyRedirect[]

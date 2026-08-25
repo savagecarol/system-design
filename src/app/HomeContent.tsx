@@ -162,9 +162,9 @@ function ExploreSection({
             <div className={`inline-flex p-2.5 rounded-lg border mb-4 ${card.accent}`}>
               {card.icon}
             </div>
-            <h2 className="text-lg font-semibold text-gray-900 group-hover:text-brand-600 transition-colors mb-2">
+            <h3 className="text-lg font-semibold text-gray-900 group-hover:text-brand-600 transition-colors mb-2">
               {card.title}
-            </h2>
+            </h3>
             <p className="text-sm text-muted line-clamp-3 mb-4">{card.description}</p>
             <span className="text-xs font-mono text-muted">{card.stat}</span>
           </Link>
@@ -264,7 +264,11 @@ function CategoryGroup({ category }: { category: Categories[number] }) {
   return (
     <motion.section variants={fadeInUp}>
       <div className="flex items-center gap-3 mb-6">
-        <h2 className="text-xl font-bold text-gray-900">{category.category}</h2>
+        <h2 className="text-xl font-bold text-gray-900">
+          <Link href={`/${category.categorySlug}`} className="hover:text-brand-600">
+            {category.category}
+          </Link>
+        </h2>
         <span className="text-xs text-muted px-2 py-0.5 rounded-full bg-gray-100 font-mono">
           {category.chapters.length} chapters
         </span>

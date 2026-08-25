@@ -19,7 +19,7 @@ export const blogMeta: Record<string, BlogMeta> = {
     title: 'Messaging Queue Vs Pub/Sub',
     date: '2026-07-10',
     description:
-      'they both are messaging patterns used in decoupled service. queues are used to assign work and pub/sub is used to broadcast messages to multiple subscribers.',
+      'Both are messaging patterns for decoupled services. Queues assign work to one consumer; pub/sub broadcasts the same message to many subscribers.',
     tags: ['system-design'],
     readTime: 2,
   },
@@ -31,7 +31,7 @@ export const blogMeta: Record<string, BlogMeta> = {
     tags: ['system-design'],
     readTime: 2,
   },
-  'differences-in-system-desgin-interview-topics': {
+  'differences-in-system-design-interview-topics': {
     title: 'Differences in System Design Interview Topics',
     date: '2026-08-01',
     description:

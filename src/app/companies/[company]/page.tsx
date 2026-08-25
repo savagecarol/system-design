@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getAllCompanies, getCompanyBySlug, getCompanyPosts } from '@/lib/companies'
 import { CompanyPostsContent } from './CompanyPostsContent'
+import { pageMetadata } from '@/lib/seo'
 
 interface PageProps {
   params: {
@@ -18,10 +19,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const company = getCompanyBySlug(params.company)
   if (!company) return {}
 
-  return {
+  return pageMetadata({
     title: `${company.name} — System Design Case Studies`,
     description: company.description,
-  }
+    path: `/companies/${company.slug}`,
+    ogImageAlt: `${company.name} system design case studies`,
+  })
 }
 
 export default function CompanyPage({ params }: PageProps) {

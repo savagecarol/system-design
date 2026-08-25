@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import { chapterMeta, defaultMeta } from '../../chapters.config'
+import { canonicalChapterFullSlug } from './slug-aliases'
 
 export interface Chapter {
   categoryOrder: number
@@ -10,6 +11,7 @@ export interface Chapter {
   title: string
   slug: string
   fullSlug: string
+  fileSlug: string
   diagramPath: string
   difficulty: string
   readTime: number
@@ -95,18 +97,20 @@ function getAllChaptersFromPublicDiagrams(): Chapter[] {
       .filter(f => f.isFile() && f.name.endsWith('.excalidraw'))
 
     for (const file of files) {
-      const chapterSlug = file.name.replace('.excalidraw', '')
-      const fullSlug = `${categorySlug}/${chapterSlug}`
-      const meta = chapterMeta[fullSlug] ?? defaultMeta
+      const fileSlug = file.name.replace('.excalidraw', '')
+      const fullSlug = canonicalChapterFullSlug(categorySlug, fileSlug)
+      const slug = fullSlug.slice(categorySlug.length + 1)
+      const meta = chapterMeta[fullSlug] ?? chapterMeta[`${categorySlug}/${fileSlug}`] ?? defaultMeta
       chapters.push({
         categoryOrder: catOrder,
         category,
         categorySlug,
-        chapterOrder: chapterOrderMap.get(fullSlug) ?? 99,
-        title: toTitle(chapterSlug.replace(/-/g, ' ')),
-        slug: chapterSlug,
+        chapterOrder: chapterOrderMap.get(fullSlug) ?? chapterOrderMap.get(`${categorySlug}/${fileSlug}`) ?? 99,
+        title: meta.title || toTitle(slug.replace(/-/g, ' ')),
+        slug,
         fullSlug,
-        diagramPath: `/diagrams/${categorySlug}/${chapterSlug}.excalidraw`,
+        fileSlug,
+        diagramPath: `/diagrams/${categorySlug}/${fileSlug}.excalidraw`,
         difficulty: meta.difficulty,
         readTime: meta.readTime,
         description: meta.description,
@@ -142,17 +146,19 @@ export function getAllChapters(): Chapter[] {
       const parsed = parseFile(file.name)
       if (!parsed) continue
 
-      const fullSlug = `${categorySlug}/${parsed.slug}`
-      const meta = chapterMeta[fullSlug] ?? defaultMeta
+      const fullSlug = canonicalChapterFullSlug(categorySlug, parsed.slug)
+      const slug = fullSlug.slice(categorySlug.length + 1)
+      const meta = chapterMeta[fullSlug] ?? chapterMeta[`${categorySlug}/${parsed.slug}`] ?? defaultMeta
 
       chapters.push({
         categoryOrder,
         category,
         categorySlug,
         chapterOrder: parsed.order,
-        title: parsed.title,
-        slug: parsed.slug,
+        title: meta.title || parsed.title,
+        slug,
         fullSlug,
+        fileSlug: parsed.slug,
         diagramPath: `/diagrams/${categorySlug}/${parsed.slug}.excalidraw`,
         difficulty: meta.difficulty,
         readTime: meta.readTime,
@@ -192,6 +198,10 @@ export function getChaptersByCategory(): CategoryGroup[] {
   }
 
   return groupArray.sort((a: CategoryGroup, b: CategoryGroup) => a.categoryOrder - b.categoryOrder)
+}
+
+export function getCategoryBySlug(categorySlug: string): CategoryGroup | undefined {
+  return getChaptersByCategory().find(group => group.categorySlug === categorySlug)
 }
 
 export function getPrevNextChapters(fullSlug: string): { prev: Chapter | null; next: Chapter | null } {

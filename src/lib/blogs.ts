@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import { blogMeta, defaultBlogMeta } from '../../blogs.config'
+import { canonicalBlogSlug } from './slug-aliases'
 
 export interface BlogPost {
   slug: string
@@ -33,8 +34,9 @@ export function getAllBlogPosts(): BlogPost[] {
 
   const posts: BlogPost[] = files.map(file => {
     const filename = file.name.replace('.excalidraw', '')  // raw, for config lookup + diagram path
-    const slug = toUrlSlug(filename)                       // clean URL slug, e.g. "message-queue-vs-pub-sub"
-    const meta = blogMeta[slug] ?? defaultBlogMeta
+    const fileSlug = toUrlSlug(filename)
+    const slug = canonicalBlogSlug(fileSlug)
+    const meta = blogMeta[slug] ?? blogMeta[fileSlug] ?? defaultBlogMeta
     return {
       slug,
       title: meta.title || toTitle(filename.replace(/-/g, ' ')),

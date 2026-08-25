@@ -31,7 +31,7 @@ export function ExcalidrawViewer({ diagramPath, title }: ExcalidrawViewerProps) 
     setError(false)
     setLoaded(false)
 
-    fetch(diagramPath)
+    fetch(diagramPath, { cache: 'force-cache' })
       .then(res => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`)
         return res.json()

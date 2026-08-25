@@ -49,10 +49,10 @@ export function BlogContent({ posts }: BlogContentProps) {
 
       <main className="max-w-4xl mx-auto px-4 pt-24 pb-16">
         <motion.div variants={fadeIn} initial="hidden" animate="visible" className="mb-10">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2 tracking-tight">Blog</h1>
-          <p className="text-muted text-base mb-6">
-            Deep-dives, visual explanations, and system design insights.
-          </p>
+        <h1 className="text-4xl font-bold text-gray-900 mb-2 tracking-tight">System Design Blog</h1>
+        <p className="text-muted text-base mb-6">
+          Visual deep-dives on messaging, data structures, and interview topic comparisons.
+        </p>
 
           <div className="relative mb-4">
             <svg

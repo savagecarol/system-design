@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import { companiesMeta } from '../../companies.config'
 import { companyPostMeta, defaultCompanyPostMeta } from '../../company-posts.config'
+import { canonicalCompanyPostSlug } from './slug-aliases'
 
 export interface CompanyHighlightPost {
   slug: string
@@ -93,8 +94,9 @@ export function getCompanyPosts(companySlug: string): CompanyPost[] {
 
   const posts: CompanyPost[] = files.map(file => {
     const filename = file.name.replace('.excalidraw', '')
-    const slug = toUrlSlug(filename)
-    const meta = companyPostMeta[slug] ?? defaultCompanyPostMeta
+    const fileSlug = toUrlSlug(filename)
+    const slug = canonicalCompanyPostSlug(fileSlug)
+    const meta = companyPostMeta[slug] ?? companyPostMeta[fileSlug] ?? defaultCompanyPostMeta
     return {
       companySlug,
       slug,
