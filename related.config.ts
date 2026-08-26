@@ -82,6 +82,7 @@ export const relatedLinks: Record<string, RelatedLink[]> = {
   ],
   'blog/message-queue-vs-pub-sub': [
     { href: '/architecture-patterns/event-driven', label: 'Event-Driven Architecture', type: 'chapter' },
+    { href: '/blog/transactional-outbox-pattern', label: 'Transactional Outbox', type: 'blog' },
   ],
   'blog/presigned-url-and-multi-part-upload': [
     { href: '/networking-and-edge/cdn', label: 'CDN', type: 'chapter' },
@@ -102,5 +103,10 @@ export const relatedLinks: Record<string, RelatedLink[]> = {
     { href: '/architecture-patterns/microservices', label: 'Microservices', type: 'chapter' },
     { href: '/networking-and-edge/api-gateway', label: 'API Gateway', type: 'chapter' },
     { href: '/theorems/consensus-fault-tolerance', label: 'Fault Tolerance', type: 'chapter' },
+  ],
+  'blog/transactional-outbox-pattern': [
+    { href: '/architecture-patterns/event-driven', label: 'Event-Driven Architecture', type: 'chapter' },
+    { href: '/blog/message-queue-vs-pub-sub', label: 'Queue vs Pub/Sub', type: 'blog' },
+    { href: '/blog/circuit-breaker', label: 'Circuit Breaker', type: 'blog' },
   ],
 }

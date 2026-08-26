@@ -71,4 +71,12 @@ export const blogMeta: Record<string, BlogMeta> = {
     tags: ['system-design'],
     readTime: 2,
   },
+  'transactional-outbox-pattern': {
+    title: 'Transactional Outbox Pattern',
+    date: '2026-08-26',
+    description:
+      'Write the business row and an outbox event in the same database transaction, then a worker publishes pending events to Kafka. That way payment and analytics never miss an order that already committed.',
+    tags: ['system-design'],
+    readTime: 2,
+  },
 }
