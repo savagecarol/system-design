@@ -53,6 +53,7 @@ export const relatedLinks: Record<string, RelatedLink[]> = {
     { href: '/networking-and-edge/proxies', label: 'Proxies', type: 'chapter' },
     { href: '/networking-and-edge/where-to-use-what', label: 'Where to Use What', type: 'chapter' },
     { href: '/companies/twitter/twitter-system-design', label: 'Twitter System Design', type: 'company' },
+    { href: '/blog/cache-stampede-thundering-herd', label: 'Cache Stampede', type: 'blog' },
   ],
   'networking-and-edge/api-gateway': [
     { href: '/networking-and-edge/proxies', label: 'Proxies', type: 'chapter' },
@@ -90,5 +91,10 @@ export const relatedLinks: Record<string, RelatedLink[]> = {
     { href: '/companies/twitter/timelines-at-scale', label: 'Timelines at Scale', type: 'company' },
     { href: '/architecture-patterns/event-driven', label: 'Event-Driven Architecture', type: 'chapter' },
     { href: '/blog/message-queue-vs-pub-sub', label: 'Queue vs Pub/Sub', type: 'blog' },
+  ],
+  'blog/cache-stampede-thundering-herd': [
+    { href: '/networking-and-edge/cdn', label: 'CDN', type: 'chapter' },
+    { href: '/blog/bloom-filters', label: 'Bloom Filters', type: 'blog' },
+    { href: '/scaling/auto-scaling', label: 'Auto Scaling', type: 'chapter' },
   ],
 }

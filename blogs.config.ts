@@ -55,4 +55,12 @@ export const blogMeta: Record<string, BlogMeta> = {
     tags: ['system-design'],
     readTime: 2,
   },
+  'cache-stampede-thundering-herd': {
+    title: 'Cache Stampede / Thundering Herd',
+    date: '2026-08-26',
+    description:
+      'When a hot cache key expires, thousands of requests miss at once and stampede the database. One request should rebuild the cache (often with a lock); the rest wait or keep serving stale data.',
+    tags: ['system-design'],
+    readTime: 2,
+  },
 }
