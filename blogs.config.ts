@@ -63,4 +63,12 @@ export const blogMeta: Record<string, BlogMeta> = {
     tags: ['system-design'],
     readTime: 2,
   },
+  'circuit-breaker': {
+    title: 'Circuit Breaker',
+    date: '2026-08-26',
+    description:
+      'Stop calling a failing dependency. Closed is normal traffic, Open fails fast with no calls, Half-Open lets a few requests through to see if the service recovered — Resilience4j, PyBreaker, gobreaker.',
+    tags: ['system-design'],
+    readTime: 2,
+  },
 }

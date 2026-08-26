@@ -60,6 +60,7 @@ export const relatedLinks: Record<string, RelatedLink[]> = {
     { href: '/networking-and-edge/where-to-use-what', label: 'Where to Use What', type: 'chapter' },
     { href: '/companies/twitter/twitter-system-design', label: 'Twitter System Design', type: 'company' },
     { href: '/blog/differences-in-system-design-interview-topics', label: 'LB vs API Gateway', type: 'blog' },
+    { href: '/blog/circuit-breaker', label: 'Circuit Breaker', type: 'blog' },
   ],
   'networking-and-edge/where-to-use-what': [
     { href: '/networking-and-edge/proxies', label: 'Proxies', type: 'chapter' },
@@ -96,5 +97,10 @@ export const relatedLinks: Record<string, RelatedLink[]> = {
     { href: '/networking-and-edge/cdn', label: 'CDN', type: 'chapter' },
     { href: '/blog/bloom-filters', label: 'Bloom Filters', type: 'blog' },
     { href: '/scaling/auto-scaling', label: 'Auto Scaling', type: 'chapter' },
+  ],
+  'blog/circuit-breaker': [
+    { href: '/architecture-patterns/microservices', label: 'Microservices', type: 'chapter' },
+    { href: '/networking-and-edge/api-gateway', label: 'API Gateway', type: 'chapter' },
+    { href: '/theorems/consensus-fault-tolerance', label: 'Fault Tolerance', type: 'chapter' },
   ],
 }
