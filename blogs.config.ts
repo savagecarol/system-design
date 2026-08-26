@@ -47,4 +47,12 @@ export const blogMeta: Record<string, BlogMeta> = {
     tags: ['system-design'],
     readTime: 2,
   },
+  'fan-out-on-write-and-fan-out-on-read': {
+    title: 'Fan-Out on Write vs Fan-Out on Read',
+    date: '2026-08-26',
+    description:
+      'When someone posts, do you push the update into every follower feed (fan-out on write) or assemble the feed when they open the app (fan-out on read)? Same idea as Twitter timelines — write is fast to read, read is cheaper to write.',
+    tags: ['system-design'],
+    readTime: 2,
+  },
 }

@@ -33,6 +33,7 @@ export const relatedLinks: Record<string, RelatedLink[]> = {
   'companies/twitter/timelines-at-scale': [
     { href: '/companies/twitter/twitter-system-design', label: 'Twitter System Design', type: 'company' },
     { href: '/scaling/horizontal-scaling', label: 'Horizontal Scaling', type: 'chapter' },
+    { href: '/blog/fan-out-on-write-and-fan-out-on-read', label: 'Fan-Out on Write vs Read', type: 'blog' },
   ],
   'companies/twitter/snowflake': [
     { href: '/companies/twitter/twitter-system-design', label: 'Twitter System Design', type: 'company' },
@@ -84,5 +85,10 @@ export const relatedLinks: Record<string, RelatedLink[]> = {
     { href: '/networking-and-edge/cdn', label: 'CDN', type: 'chapter' },
     { href: '/networking-and-edge/proxies', label: 'Proxies', type: 'chapter' },
     { href: '/capacity-estimation/calculations', label: 'Capacity Calculations', type: 'chapter' },
+  ],
+  'blog/fan-out-on-write-and-fan-out-on-read': [
+    { href: '/companies/twitter/timelines-at-scale', label: 'Timelines at Scale', type: 'company' },
+    { href: '/architecture-patterns/event-driven', label: 'Event-Driven Architecture', type: 'chapter' },
+    { href: '/blog/message-queue-vs-pub-sub', label: 'Queue vs Pub/Sub', type: 'blog' },
   ],
 }
