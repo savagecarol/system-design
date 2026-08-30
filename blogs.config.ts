@@ -95,4 +95,12 @@ export const blogMeta: Record<string, BlogMeta> = {
     tags: ['system-design'],
     readTime: 2,
   },
+  'retry-exponential-bacoff-jitter': {
+    title: 'Retry + Exponential Backoff + Jitter',
+    date: '2026-08-30',
+    description:
+      'Retrying is not enough: 10,000 clients waiting 1s then 5s then 10s retry in lockstep and stampede the dependency again. Exponential backoff spaces attempts; jitter (1.2s, 5.5s, 10.1s) desynchronizes them.',
+    tags: ['system-design'],
+    readTime: 2,
+  },
 }

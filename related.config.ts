@@ -120,5 +120,11 @@ export const relatedLinks: Record<string, RelatedLink[]> = {
     { href: '/scaling/auto-scaling', label: 'Auto Scaling', type: 'chapter' },
     { href: '/scaling/horizontal-scaling', label: 'Horizontal Scaling', type: 'chapter' },
     { href: '/blog/circuit-breaker', label: 'Circuit Breaker', type: 'blog' },
+    { href: '/blog/retry-exponential-bacoff-jitter', label: 'Retry + Backoff + Jitter', type: 'blog' },
+  ],
+  'blog/retry-exponential-bacoff-jitter': [
+    { href: '/blog/circuit-breaker', label: 'Circuit Breaker', type: 'blog' },
+    { href: '/blog/load-shedding', label: 'Load Shedding', type: 'blog' },
+    { href: '/blog/cache-stampede-thundering-herd', label: 'Cache Stampede', type: 'blog' },
   ],
 }
