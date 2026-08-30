@@ -79,4 +79,20 @@ export const blogMeta: Record<string, BlogMeta> = {
     tags: ['system-design'],
     readTime: 2,
   },
+  'hot-key-problem': {
+    title: 'Hot Key Problem',
+    date: '2026-08-26',
+    description:
+      'A clustered cache can shard keys evenly and still melt one node when one key is a celebrity — like India–Pakistan cricket score. Copy that hot key onto other caches so the reads spread out.',
+    tags: ['system-design'],
+    readTime: 2,
+  },
+  'load-shedding': {
+    title: 'Load Shedding',
+    date: '2026-08-30',
+    description:
+      'When 30k req/s hit a box that can only do 10k, extra servers take time and the database may not scale with you. Drop the overflow — keep checkout and payment, shed recommendations — via concurrency limits, bounded queues, health checks, or priority.',
+    tags: ['system-design'],
+    readTime: 2,
+  },
 }

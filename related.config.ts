@@ -98,15 +98,27 @@ export const relatedLinks: Record<string, RelatedLink[]> = {
     { href: '/networking-and-edge/cdn', label: 'CDN', type: 'chapter' },
     { href: '/blog/bloom-filters', label: 'Bloom Filters', type: 'blog' },
     { href: '/scaling/auto-scaling', label: 'Auto Scaling', type: 'chapter' },
+    { href: '/blog/hot-key-problem', label: 'Hot Key Problem', type: 'blog' },
   ],
   'blog/circuit-breaker': [
     { href: '/architecture-patterns/microservices', label: 'Microservices', type: 'chapter' },
     { href: '/networking-and-edge/api-gateway', label: 'API Gateway', type: 'chapter' },
     { href: '/theorems/consensus-fault-tolerance', label: 'Fault Tolerance', type: 'chapter' },
+    { href: '/blog/load-shedding', label: 'Load Shedding', type: 'blog' },
   ],
   'blog/transactional-outbox-pattern': [
     { href: '/architecture-patterns/event-driven', label: 'Event-Driven Architecture', type: 'chapter' },
     { href: '/blog/message-queue-vs-pub-sub', label: 'Queue vs Pub/Sub', type: 'blog' },
+    { href: '/blog/circuit-breaker', label: 'Circuit Breaker', type: 'blog' },
+  ],
+  'blog/hot-key-problem': [
+    { href: '/blog/cache-stampede-thundering-herd', label: 'Cache Stampede', type: 'blog' },
+    { href: '/networking-and-edge/cdn', label: 'CDN', type: 'chapter' },
+    { href: '/scaling/horizontal-scaling', label: 'Horizontal Scaling', type: 'chapter' },
+  ],
+  'blog/load-shedding': [
+    { href: '/scaling/auto-scaling', label: 'Auto Scaling', type: 'chapter' },
+    { href: '/scaling/horizontal-scaling', label: 'Horizontal Scaling', type: 'chapter' },
     { href: '/blog/circuit-breaker', label: 'Circuit Breaker', type: 'blog' },
   ],
 }
