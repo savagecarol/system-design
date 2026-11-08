@@ -28,7 +28,7 @@ export const appsMeta: AppMeta[] = [
     description:
       'Log workouts, track progress, and keep training records on your device — no account, ads, or subscription.',
     status: 'coming-soon',
-    githubUrl: '',
+    githubUrl: 'https://github.com/savagedevs/dumbell',
     playStoreUrl: 'https://play.google.com/store/apps/details?id=com.savagecarol.dumbbell',
     theme: {
       background: '#10110F',
