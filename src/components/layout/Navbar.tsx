@@ -67,6 +67,12 @@ export function Navbar({ currentPage = '/', showMenuButton = false }: NavbarProp
           >
             Companies
           </Link>
+          <Link
+            href="/app"
+            className="px-3 py-1.5 rounded-lg text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors"
+          >
+            Apps
+          </Link>
           <a
             href="https://youtube.com/@savagecarol"
             target="_blank"
