@@ -3,6 +3,7 @@ export const footerNav = {
     { href: '/', label: 'Chapters' },
     { href: '/companies', label: 'Company case studies' },
     { href: '/blog', label: 'Blog' },
+    { href: '/app', label: 'Apps' },
     { href: '/about', label: 'About' },
   ],
   topics: [

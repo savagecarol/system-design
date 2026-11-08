@@ -2,12 +2,13 @@ import type { MetadataRoute } from 'next'
 import { getAllChapters, getChaptersByCategory } from '@/lib/content'
 import { getAllBlogPosts } from '@/lib/blogs'
 import { getAllCompanies, getCompanyPosts } from '@/lib/companies'
+import { getAllApps } from '@/lib/apps'
 import { SITE_URL } from '@/lib/site'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
 
-  const staticRoutes: MetadataRoute.Sitemap = ['/', '/about', '/blog', '/companies'].map(path => ({
+  const staticRoutes: MetadataRoute.Sitemap = ['/', '/about', '/blog', '/companies', '/app'].map(path => ({
     url: `${SITE_URL}${path === '/' ? '' : path}`,
     lastModified: now,
     changeFrequency: path === '/' ? 'weekly' : 'monthly',
@@ -51,5 +52,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ])
 
-  return [...staticRoutes, ...categories, ...chapters, ...posts, ...companyPages]
+  const apps = getAllApps().flatMap(app => {
+    const lastModified = app.publishedAt ? new Date(app.publishedAt) : now
+    return [
+      {
+        url: `${SITE_URL}/app/${app.slug}`,
+        lastModified,
+        changeFrequency: 'monthly' as const,
+        priority: 0.75,
+      },
+      {
+        url: `${SITE_URL}/app/${app.slug}/privacy`,
+        lastModified,
+        changeFrequency: 'yearly' as const,
+        priority: 0.5,
+      },
+      {
+        url: `${SITE_URL}/app/${app.slug}/instructions`,
+        lastModified,
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+      },
+    ]
+  })
+
+  return [...staticRoutes, ...categories, ...chapters, ...posts, ...companyPages, ...apps]
 }
