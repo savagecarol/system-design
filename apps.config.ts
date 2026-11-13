@@ -26,8 +26,8 @@ export const appsMeta: AppMeta[] = [
     name: 'Dumbbell',
     tagline: 'Free offline workout journal',
     description:
-      'Log workouts, track progress, and keep training records on your device — no account, ads, or subscription.',
-    status: 'coming-soon',
+      'Log workouts, track progress, and keep training records on your device — no account or subscription. Includes ads; workout logging works offline.',
+    status: 'launched',
     githubUrl: 'https://github.com/savagedevs/dumbell',
     playStoreUrl: 'https://play.google.com/store/apps/details?id=com.savagecarol.dumbbell',
     theme: {
@@ -38,7 +38,7 @@ export const appsMeta: AppMeta[] = [
       muted: '#A8ACA0',
     },
     features: [
-      'Free forever — no login, ads, or subscription',
+      'Free with ads — no login or subscription',
       'Offline-first: workouts stay in private on-device storage',
       'Log sets with reps and weight in kg or lb',
       'Persistent workout timer with resume or discard',
