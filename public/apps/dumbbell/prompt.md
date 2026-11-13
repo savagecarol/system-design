@@ -8,7 +8,7 @@ Build a free, offline-first mobile workout tracker called **Dumbbell**.
 
 ## Product rules
 
-- No accounts, no login, no backend, no ads, no subscriptions.
+- No accounts, no login, no training-data backend, no subscriptions. Google AdMob supports the free app with a History banner and an interstitial after every second completed workout when available; save first and retain normal close/skip controls.
 - All workout and profile data stays in private on-device storage by default.
 - Users can export backups; uninstalling or losing the device can delete local data — make that clear in Settings.
 - Target Android first. Keep the app usable fully offline.
