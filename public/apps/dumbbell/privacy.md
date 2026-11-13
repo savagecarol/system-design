@@ -1,6 +1,6 @@
 # Dumbbell Privacy Policy
 
-Effective date: 8 November 2026
+Effective date: 13 November 2026
 
 ## Information stored on your device
 
@@ -8,7 +8,15 @@ Dumbbell is a free workout tracker that works without an account. It stores your
 
 ## Collection and use
 
-Dumbbell uses this information to display your profile, log and resume workouts, calculate progress, and create exports or summary images you request. The app does not send your training records, photos or profile to a developer server. It does not include advertising, analytics, tracking or automatic crash-reporting services. The Android release does not request internet access.
+Dumbbell uses this information to display your profile, log and resume workouts, calculate progress, and create exports or summary images you request. The app does not send your training records, photos or profile to a developer server. The Android app uses Google AdMob to display banner advertising on the History screen and a full-screen ad after every second successfully finished workout, when an ad is available. Workouts are saved before a full-screen ad appears. A local completion counter remembers this frequency across app restarts. Workout logging and stored exercise information remain available offline; ads and consent messages use an internet connection. We do not send your name, training records, body-weight entries or photos to AdMob for advertising.
+
+## Advertising and privacy choices
+
+Google's Mobile Ads SDK may collect and share IP addresses (which can indicate approximate location), device and advertising identifiers, interactions with the app and ads, and diagnostic information such as performance and crash data. Google uses this information for advertising, measurement, fraud prevention and service operation. Advertising may be personalized depending on your choices and applicable requirements. We do not add a separate analytics or automatic crash-reporting service.
+
+Google's User Messaging Platform manages applicable consent messages before ad requests. Where available, use Settings → Ad privacy choices to review or change your choices. Device advertising controls are also available in Android Settings. Your ability to log workouts does not depend on agreeing to personalized advertising.
+
+Google describes its processing at https://policies.google.com/privacy and https://policies.google.com/technologies/ads. Ad interactions and any advertiser websites you visit are handled under those services' policies.
 
 ## Photos, files and optional notifications
 
